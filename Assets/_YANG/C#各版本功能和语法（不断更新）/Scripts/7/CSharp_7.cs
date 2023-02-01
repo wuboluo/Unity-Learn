@@ -39,7 +39,7 @@ public class CSharp_7 : MonoBehaviour
         #region 知识点四：out变量的快捷使用，弃元
 
         // 1，直接在参数类型前添加out关键字
-        OutMethod(out var x, out int y);
+        OutMethod(out int x, out int y);
         print(x + y);
 
         // 当存在参数个数相同的重载时，不能使用var，需要指明具体的类型
@@ -56,26 +56,26 @@ public class CSharp_7 : MonoBehaviour
         // 作用：用于修饰数据对象中的某些值类型变量
 
         // 1，修饰值类型临时变量
-        var i = 10;
-        ref var i2 = ref i;
+        int i = 10;
+        ref int i2 = ref i;
         i2 = 20;
         print(i);
 
-        var refs = new RefStruct(5, 5);
-        ref var refs2 = ref refs;
+        RefStruct refs = new RefStruct(5, 5);
+        ref RefStruct refs2 = ref refs;
         refs2.atk = 10;
         print(refs.atk);
 
         // 2，获取对象中的参数
-        ref var atk = ref refs.atk;
+        ref int atk = ref refs.atk;
         atk = 99;
         print(refs.atk);
 
         // 3，函数返回值
         int[] numbers = {1, 2, 3, 4, 5};
-        ref var resultNumber = ref FindNumber(numbers, 5);
+        ref int resultNumber = ref FindNumber(numbers, 5);
         resultNumber = 50;
-        foreach (var t in numbers) print(t);
+        foreach (int t in numbers) print(t);
 
         #endregion
 
@@ -88,7 +88,7 @@ public class CSharp_7 : MonoBehaviour
         // 本地函数可以使用声明自己的函数中的变量
 
         // 作用：方便逻辑的封装
-        var res = LocalMethod(1);
+        int res = LocalMethod(1);
         print(res);
 
         #endregion
@@ -150,7 +150,7 @@ public class CSharp_7 : MonoBehaviour
         // 作用：提升开发效率，更方便的处理多返回值等需要用到的多个值时的需求
 
         // 1，声明（获取值：ItemX作为从左到右依次的函数，X从1开始）
-        var group = (1, 0.5f);
+        (int, float) group = (1, 0.5f);
         print(group.Item1);
         (int i, float f) group2 = new(1, 0.5f);
         print(group2.i);
@@ -159,14 +159,14 @@ public class CSharp_7 : MonoBehaviour
         print(group == group2);
 
         // 3-1，元组的应用——函数返回值
-        var groupRes = GroupMethod(1, "hhh");
+        (int, string) groupRes = GroupMethod(1, "hhh");
         // 元组的解构赋值：相当于把多返回值元组拆分到不同的变量中
-        var (resI, resStr) = GroupMethod(1, "hhh");
+        (int resI, string resStr) = GroupMethod(1, "hhh");
         // 丢弃参数
-        var (resI2, _) = GroupMethod(1, "hhh");
+        (int resI2, _) = GroupMethod(1, "hhh");
 
         // 3-2，元组的应用——字典
-        var groupDic = new Dictionary<(int, float), string>();
+        Dictionary<(int, float), string> groupDic = new Dictionary<(int, float), string>();
         groupDic.Add((1, 0.5f), "hhh");
         if (groupDic.ContainsKey((1, 0.5f))) print(groupDic[(1, 0.5f)]);
 
@@ -224,7 +224,7 @@ public class CSharp_7 : MonoBehaviour
 
     private ref int FindNumber(int[] numbers, int targetNumber)
     {
-        for (var i = 0; i < numbers.Length; i++)
+        for (int i = 0; i < numbers.Length; i++)
             if (numbers[i] == targetNumber)
                 return ref numbers[i];
 
@@ -249,7 +249,7 @@ public class CSharp_7 : MonoBehaviour
 
     private string GetStr(string str, int index)
     {
-        var res = str.Split('.');
+        string[] res = str.Split('.');
         return res.Length > index ? res[index] : throw new IndexOutOfRangeException();
     }
 

@@ -81,7 +81,7 @@ public class CSharp_5_Thread : MonoBehaviour
 
             // 4，将方法排入队列以便执行，当线程池中线程变得可用时执行
             // 这里就能看出缺点，执行顺序不能控制
-            for (var i = 0; i < 10; i++)
+            for (int i = 0; i < 10; i++)
             {
                 ThreadPool.QueueUserWorkItem(obj =>
                 {

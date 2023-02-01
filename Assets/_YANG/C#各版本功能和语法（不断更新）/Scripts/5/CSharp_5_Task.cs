@@ -33,16 +33,16 @@ public class CSharp_5_Task : MonoBehaviour
         {
             // 1，直接new一个Task对象，传入委托函数并启动
             // new就等于从线程池中取出一个
-            var t1 = new Task(TaskAction);
+            Task t1 = new Task(TaskAction);
             t1.Start();
 
             // 2，通过Task中的Run静态方法传入委托函数
             // 通过Run创建的Task对象不需要再Start开启
-            var t2 = Task.Run(TaskAction);
+            Task t2 = Task.Run(TaskAction);
 
             // 3，通过Task.Factory中的StartNew静态方法传入委托函数
             // 同样不需要Start开启
-            var t3 = Task.Factory.StartNew(TaskAction);
+            Task t3 = Task.Factory.StartNew(TaskAction);
         }
 
         #endregion
@@ -81,7 +81,7 @@ public class CSharp_5_Task : MonoBehaviour
 
             // 如果希望Task能够同步执行
             // 只需要调用Task对象中的 RunSynchronously方法。需要使用 new Task()的方式，因为 Run或StartNew在创建时就会自动启动
-            var t4 = new Task(() =>
+            Task t4 = new Task(() =>
             {
                 Thread.Sleep(1000);
                 print("hhh");
@@ -103,13 +103,13 @@ public class CSharp_5_Task : MonoBehaviour
         if (point5)
         {
             // 1，Wait方法：等待任务执行完毕，再执行后面的内容
-            var t5 = Task.Run(() =>
+            Task t5 = Task.Run(() =>
             {
-                for (var i = 0; i < 5; i++) print("--- " + i);
+                for (int i = 0; i < 5; i++) print("--- " + i);
             });
-            var t6 = new Task(() =>
+            Task t6 = new Task(() =>
             {
-                for (var i = 0; i < 10; i++) print("*** " + i);
+                for (int i = 0; i < 10; i++) print("*** " + i);
             });
 
             // 看起来很像"同步执行"，会先把t5的内容执行完，再执行后续的内容（主线程+t6）
@@ -132,13 +132,13 @@ public class CSharp_5_Task : MonoBehaviour
 
         if (point6)
         {
-            var t7 = Task.Run(() =>
+            Task t7 = Task.Run(() =>
             {
-                for (var i = 0; i < 5; i++) print("--- " + i);
+                for (int i = 0; i < 5; i++) print("--- " + i);
             });
-            var t8 = Task.Run(() =>
+            Task t8 = Task.Run(() =>
             {
-                for (var i = 0; i < 10; i++) print("*** " + i);
+                for (int i = 0; i < 10; i++) print("*** " + i);
             });
 
             // 1，Task.WhenAll(t1,t2...tn).ContinueWith(newTask)：当传入的t1~tn任务都完成后，再执行某任务
@@ -172,7 +172,7 @@ public class CSharp_5_Task : MonoBehaviour
 
             Task.Run(() =>
             {
-                var i = 0;
+                int i = 0;
                 // cts.Cancel() 会让cts.IsCancellationRequested变为true
                 while (!cts.IsCancellationRequested)
                 {
@@ -215,7 +215,7 @@ public class CSharp_5_Task : MonoBehaviour
 
     private void TaskAction()
     {
-        var i = 0;
+        int i = 0;
         while (isRunning)
         {
             print("无返回值：" + i);
@@ -226,7 +226,7 @@ public class CSharp_5_Task : MonoBehaviour
 
     private int TaskFunc()
     {
-        var i = 0;
+        int i = 0;
         while (isRunning)
         {
             print("有返回值：" + i);
@@ -240,7 +240,7 @@ public class CSharp_5_Task : MonoBehaviour
     private void ContinuationAction(Task t)
     {
         print("在t7和t8任务完成后，开启了一个新的任务");
-        var i = 0;
+        int i = 0;
         while (isRunning)
         {
             print(i);

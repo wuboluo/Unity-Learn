@@ -9,8 +9,8 @@ public class CSharp_7_Questions : MonoBehaviour
 {
     private void Start()
     {
-        var monsters = new Monster[10];
-        for (var i = 0; i < monsters.Length; i++)
+        Monster[] monsters = new Monster[10];
+        for (int i = 0; i < monsters.Length; i++)
         {
             monsters[i] = RandomCreateMonster();
             print(monsters[i].GetType());
@@ -27,7 +27,7 @@ public class CSharp_7_Questions : MonoBehaviour
 
     private Monster RandomCreateMonster()
     {
-        var res = Random.value;
+        float res = Random.value;
 
         if (res >= 0.5f) return new Boss();
         return new Goblin();

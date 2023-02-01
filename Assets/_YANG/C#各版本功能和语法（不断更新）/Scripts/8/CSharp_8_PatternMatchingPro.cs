@@ -54,7 +54,7 @@ public class CSharp_8_PatternMatchingPro : MonoBehaviour
 
         // 使用限制：主要是用于switch语句块中只有一句代码用于返回值时
 
-        var pivot = GetPivot(PivotType.Left_Bottom);
+        Vector2 pivot = GetPivot(PivotType.Left_Bottom);
         print(pivot);
 
         #endregion
@@ -71,7 +71,7 @@ public class CSharp_8_PatternMatchingPro : MonoBehaviour
 
         // 可以结合switch表达式使用
         // 结合switch使用可以通过属性模式判断条件的组合
-        var price = GetCost(info, 100);
+        float price = GetCost(info, 100);
         print(price);
 
         #endregion
@@ -80,7 +80,7 @@ public class CSharp_8_PatternMatchingPro : MonoBehaviour
 
         // 属性模式虽可以配合switch同时判断多个变量，但它必须是一个数据结构类对象，判断其中的变量
         // 而元组模式可以更简单的完成这样的功能，不需要声明数据结构类，直接利用元组进行判断
-        var price2 = GetCost("5折", true, 50);
+        float price2 = GetCost("5折", true, 50);
         print(price2);
 
         #endregion
@@ -94,7 +94,7 @@ public class CSharp_8_PatternMatchingPro : MonoBehaviour
         }
 
         // 同样可以配合switch表达式来处理逻辑
-        var price3 = GetCost_Group(info, 30);
+        float price3 = GetCost_Group(info, 30);
         print(price3);
 
         // 补充：配合when关键字进行逻辑处理

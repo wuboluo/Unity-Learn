@@ -46,8 +46,8 @@ public class IL2CPP_Problem : MonoBehaviour
         // 主要原因就是 JIT和AOT 两个编译模式的不同造成的。
         // Mono：JIT (Just-In-Time - 实时编译）
         // IL2CPP：AOT (Ahead-Of-Time - 预先编译）
-        var listA = new List<A>();
-        var listB = new List<B>();
+        List<A> listA = new List<A>();
+        List<B> listB = new List<B>();
 
         // 解决方案：
         // 泛型类：声明一个类，然后在这个类中声明一些public的泛型类变量。
@@ -91,7 +91,7 @@ public class IL2CPP_Replenish
 
     public static void StaticTest()
     {
-        var replenish = new IL2CPP_Replenish();
+        IL2CPP_Replenish replenish = new IL2CPP_Replenish();
         replenish.Test(1);
     }
 }

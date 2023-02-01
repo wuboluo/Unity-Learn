@@ -30,7 +30,7 @@ public class CSharp_8 : MonoBehaviour
         // 作用：
         // 让本地函数不能使用访问封闭范围内（也就是上层方法中）的任何变量
         // 让本地函数只能处理逻辑，避免让它通过直接改变上层变量来处理逻辑，从而导致逻辑混乱
-        var res = LocalStaticMethod(1);
+        int res = LocalStaticMethod(1);
         print(res);
 
         #endregion
@@ -45,7 +45,7 @@ public class CSharp_8 : MonoBehaviour
         // }
 
         // 例如：
-        using (var sw = new StreamWriter("文件路径"))
+        using (StreamWriter sw = new StreamWriter("文件路径"))
         {
             // 对sw进行逻辑处理，sw只能在这里面使用
             sw.Write("");
@@ -57,7 +57,7 @@ public class CSharp_8 : MonoBehaviour
 
         // 简化，省略括号
         // 在当前函数（上层语句块，甚至在if语句块中）执行完毕后，自动释放该对象
-        using var md = new MyDisposeClass();
+        using MyDisposeClass md = new MyDisposeClass();
 
         // 注意：
         // 在使用using语法时，声明的对象必须继承System.IDisposable接口，否则报错
@@ -70,7 +70,7 @@ public class CSharp_8 : MonoBehaviour
         // ??
         // 左边值为空的时候，使用右边的值
         string str = null;
-        var str2 = str ?? "123";
+        string str2 = str ?? "123";
         print(str2); // 123
 
         // ??=
@@ -93,8 +93,8 @@ public class CSharp_8 : MonoBehaviour
         // 可以对该对象利用元组的将其具体的变量值，解构出来
         // 相当于把不同的成员变量拆分到不同的临时变量中
 
-        var p = new Person();
-        var (n, e) = p;
+        Person p = new Person();
+        (string n, string e) = p;
         print(n); // Yang
         print(e); // 383049891@qq.com
 
@@ -103,7 +103,7 @@ public class CSharp_8 : MonoBehaviour
 
     private int LocalStaticMethod(int i)
     {
-        var b = false;
+        bool b = false;
 
         static int Calc(int k, ref bool j)
         {
