@@ -17,7 +17,7 @@ namespace YANG.DependencyInjection_Reflection
             MyAssemblyName = "YANG.DependencyInjection_Reflection";
 
             XmlDocument xmlDocument = new XmlDocument();
-            xmlDocument.Load(Path.Combine(Application.streamingAssetsPath, @"DependencyInjection_Reflection\Config.xml"));
+            xmlDocument.Load(Path.Combine(Application.streamingAssetsPath, @"反射和依赖注入_配置\Config.xml"));
             XmlNode config = xmlDocument.ChildNodes[1];
 
             ButtonType = config.ChildNodes[0].ChildNodes[0].Value;
