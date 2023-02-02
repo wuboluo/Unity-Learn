@@ -1,2 +1,5 @@
-# Unity-Learn
-Summary of learn notes.
+### 简介
+此项目主要用于记录个人 Unity 知识总结和开发时遇到的问题。
+
+### 版本信息
+Unity 2021.3.11 LTS
