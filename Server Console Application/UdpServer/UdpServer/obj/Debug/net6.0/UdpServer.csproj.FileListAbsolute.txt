@@ -1,0 +1,15 @@
+E:\Up\Unity\Tang\Tang-Web\Unity-Web\Server Console Application\UdpServer\UdpServer\bin\Debug\net6.0\UdpServer.exe
+E:\Up\Unity\Tang\Tang-Web\Unity-Web\Server Console Application\UdpServer\UdpServer\bin\Debug\net6.0\UdpServer.deps.json
+E:\Up\Unity\Tang\Tang-Web\Unity-Web\Server Console Application\UdpServer\UdpServer\bin\Debug\net6.0\UdpServer.runtimeconfig.json
+E:\Up\Unity\Tang\Tang-Web\Unity-Web\Server Console Application\UdpServer\UdpServer\bin\Debug\net6.0\UdpServer.dll
+E:\Up\Unity\Tang\Tang-Web\Unity-Web\Server Console Application\UdpServer\UdpServer\bin\Debug\net6.0\UdpServer.pdb
+E:\Up\Unity\Tang\Tang-Web\Unity-Web\Server Console Application\UdpServer\UdpServer\obj\Debug\net6.0\UdpServer.csproj.AssemblyReference.cache
+E:\Up\Unity\Tang\Tang-Web\Unity-Web\Server Console Application\UdpServer\UdpServer\obj\Debug\net6.0\UdpServer.GeneratedMSBuildEditorConfig.editorconfig
+E:\Up\Unity\Tang\Tang-Web\Unity-Web\Server Console Application\UdpServer\UdpServer\obj\Debug\net6.0\UdpServer.AssemblyInfoInputs.cache
+E:\Up\Unity\Tang\Tang-Web\Unity-Web\Server Console Application\UdpServer\UdpServer\obj\Debug\net6.0\UdpServer.AssemblyInfo.cs
+E:\Up\Unity\Tang\Tang-Web\Unity-Web\Server Console Application\UdpServer\UdpServer\obj\Debug\net6.0\UdpServer.csproj.CoreCompileInputs.cache
+E:\Up\Unity\Tang\Tang-Web\Unity-Web\Server Console Application\UdpServer\UdpServer\obj\Debug\net6.0\UdpServer.dll
+E:\Up\Unity\Tang\Tang-Web\Unity-Web\Server Console Application\UdpServer\UdpServer\obj\Debug\net6.0\refint\UdpServer.dll
+E:\Up\Unity\Tang\Tang-Web\Unity-Web\Server Console Application\UdpServer\UdpServer\obj\Debug\net6.0\UdpServer.pdb
+E:\Up\Unity\Tang\Tang-Web\Unity-Web\Server Console Application\UdpServer\UdpServer\obj\Debug\net6.0\UdpServer.genruntimeconfig.cache
+E:\Up\Unity\Tang\Tang-Web\Unity-Web\Server Console Application\UdpServer\UdpServer\obj\Debug\net6.0\ref\UdpServer.dll

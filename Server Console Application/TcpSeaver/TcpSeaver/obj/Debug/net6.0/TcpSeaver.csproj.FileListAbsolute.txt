@@ -1,0 +1,15 @@
+E:\Up\Unity\Tang\Tang-Web\Unity-Web\Server Console Application\TcpSeaver\TcpSeaver\bin\Debug\net6.0\TcpSeaver.exe
+E:\Up\Unity\Tang\Tang-Web\Unity-Web\Server Console Application\TcpSeaver\TcpSeaver\bin\Debug\net6.0\TcpSeaver.deps.json
+E:\Up\Unity\Tang\Tang-Web\Unity-Web\Server Console Application\TcpSeaver\TcpSeaver\bin\Debug\net6.0\TcpSeaver.runtimeconfig.json
+E:\Up\Unity\Tang\Tang-Web\Unity-Web\Server Console Application\TcpSeaver\TcpSeaver\bin\Debug\net6.0\TcpSeaver.dll
+E:\Up\Unity\Tang\Tang-Web\Unity-Web\Server Console Application\TcpSeaver\TcpSeaver\bin\Debug\net6.0\TcpSeaver.pdb
+E:\Up\Unity\Tang\Tang-Web\Unity-Web\Server Console Application\TcpSeaver\TcpSeaver\obj\Debug\net6.0\TcpSeaver.csproj.AssemblyReference.cache
+E:\Up\Unity\Tang\Tang-Web\Unity-Web\Server Console Application\TcpSeaver\TcpSeaver\obj\Debug\net6.0\TcpSeaver.GeneratedMSBuildEditorConfig.editorconfig
+E:\Up\Unity\Tang\Tang-Web\Unity-Web\Server Console Application\TcpSeaver\TcpSeaver\obj\Debug\net6.0\TcpSeaver.AssemblyInfoInputs.cache
+E:\Up\Unity\Tang\Tang-Web\Unity-Web\Server Console Application\TcpSeaver\TcpSeaver\obj\Debug\net6.0\TcpSeaver.AssemblyInfo.cs
+E:\Up\Unity\Tang\Tang-Web\Unity-Web\Server Console Application\TcpSeaver\TcpSeaver\obj\Debug\net6.0\TcpSeaver.csproj.CoreCompileInputs.cache
+E:\Up\Unity\Tang\Tang-Web\Unity-Web\Server Console Application\TcpSeaver\TcpSeaver\obj\Debug\net6.0\TcpSeaver.dll
+E:\Up\Unity\Tang\Tang-Web\Unity-Web\Server Console Application\TcpSeaver\TcpSeaver\obj\Debug\net6.0\refint\TcpSeaver.dll
+E:\Up\Unity\Tang\Tang-Web\Unity-Web\Server Console Application\TcpSeaver\TcpSeaver\obj\Debug\net6.0\TcpSeaver.pdb
+E:\Up\Unity\Tang\Tang-Web\Unity-Web\Server Console Application\TcpSeaver\TcpSeaver\obj\Debug\net6.0\TcpSeaver.genruntimeconfig.cache
+E:\Up\Unity\Tang\Tang-Web\Unity-Web\Server Console Application\TcpSeaver\TcpSeaver\obj\Debug\net6.0\ref\TcpSeaver.dll

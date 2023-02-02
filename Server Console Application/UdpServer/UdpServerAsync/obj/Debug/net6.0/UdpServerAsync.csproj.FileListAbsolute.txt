@@ -1,0 +1,15 @@
+E:\Up\Unity\Tang\Tang-Web\Unity-Web\Server Console Application\UdpServer\UdpServerAsync\bin\Debug\net6.0\UdpServerAsync.exe
+E:\Up\Unity\Tang\Tang-Web\Unity-Web\Server Console Application\UdpServer\UdpServerAsync\bin\Debug\net6.0\UdpServerAsync.deps.json
+E:\Up\Unity\Tang\Tang-Web\Unity-Web\Server Console Application\UdpServer\UdpServerAsync\bin\Debug\net6.0\UdpServerAsync.runtimeconfig.json
+E:\Up\Unity\Tang\Tang-Web\Unity-Web\Server Console Application\UdpServer\UdpServerAsync\bin\Debug\net6.0\UdpServerAsync.dll
+E:\Up\Unity\Tang\Tang-Web\Unity-Web\Server Console Application\UdpServer\UdpServerAsync\bin\Debug\net6.0\UdpServerAsync.pdb
+E:\Up\Unity\Tang\Tang-Web\Unity-Web\Server Console Application\UdpServer\UdpServerAsync\obj\Debug\net6.0\UdpServerAsync.csproj.AssemblyReference.cache
+E:\Up\Unity\Tang\Tang-Web\Unity-Web\Server Console Application\UdpServer\UdpServerAsync\obj\Debug\net6.0\UdpServerAsync.GeneratedMSBuildEditorConfig.editorconfig
+E:\Up\Unity\Tang\Tang-Web\Unity-Web\Server Console Application\UdpServer\UdpServerAsync\obj\Debug\net6.0\UdpServerAsync.AssemblyInfoInputs.cache
+E:\Up\Unity\Tang\Tang-Web\Unity-Web\Server Console Application\UdpServer\UdpServerAsync\obj\Debug\net6.0\UdpServerAsync.AssemblyInfo.cs
+E:\Up\Unity\Tang\Tang-Web\Unity-Web\Server Console Application\UdpServer\UdpServerAsync\obj\Debug\net6.0\UdpServerAsync.csproj.CoreCompileInputs.cache
+E:\Up\Unity\Tang\Tang-Web\Unity-Web\Server Console Application\UdpServer\UdpServerAsync\obj\Debug\net6.0\UdpServerAsync.dll
+E:\Up\Unity\Tang\Tang-Web\Unity-Web\Server Console Application\UdpServer\UdpServerAsync\obj\Debug\net6.0\refint\UdpServerAsync.dll
+E:\Up\Unity\Tang\Tang-Web\Unity-Web\Server Console Application\UdpServer\UdpServerAsync\obj\Debug\net6.0\UdpServerAsync.pdb
+E:\Up\Unity\Tang\Tang-Web\Unity-Web\Server Console Application\UdpServer\UdpServerAsync\obj\Debug\net6.0\UdpServerAsync.genruntimeconfig.cache
+E:\Up\Unity\Tang\Tang-Web\Unity-Web\Server Console Application\UdpServer\UdpServerAsync\obj\Debug\net6.0\ref\UdpServerAsync.dll

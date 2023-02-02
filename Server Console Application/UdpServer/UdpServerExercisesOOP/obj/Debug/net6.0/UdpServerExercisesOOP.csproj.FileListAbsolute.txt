@@ -1,0 +1,15 @@
+E:\Up\Unity\Tang\Tang-Web\Unity-Web\Server Console Application\UdpServer\UdpServerExercisesOOP\bin\Debug\net6.0\UdpServerExercisesOOP.exe
+E:\Up\Unity\Tang\Tang-Web\Unity-Web\Server Console Application\UdpServer\UdpServerExercisesOOP\bin\Debug\net6.0\UdpServerExercisesOOP.deps.json
+E:\Up\Unity\Tang\Tang-Web\Unity-Web\Server Console Application\UdpServer\UdpServerExercisesOOP\bin\Debug\net6.0\UdpServerExercisesOOP.runtimeconfig.json
+E:\Up\Unity\Tang\Tang-Web\Unity-Web\Server Console Application\UdpServer\UdpServerExercisesOOP\bin\Debug\net6.0\UdpServerExercisesOOP.dll
+E:\Up\Unity\Tang\Tang-Web\Unity-Web\Server Console Application\UdpServer\UdpServerExercisesOOP\bin\Debug\net6.0\UdpServerExercisesOOP.pdb
+E:\Up\Unity\Tang\Tang-Web\Unity-Web\Server Console Application\UdpServer\UdpServerExercisesOOP\obj\Debug\net6.0\UdpServerExercisesOOP.csproj.AssemblyReference.cache
+E:\Up\Unity\Tang\Tang-Web\Unity-Web\Server Console Application\UdpServer\UdpServerExercisesOOP\obj\Debug\net6.0\UdpServerExercisesOOP.GeneratedMSBuildEditorConfig.editorconfig
+E:\Up\Unity\Tang\Tang-Web\Unity-Web\Server Console Application\UdpServer\UdpServerExercisesOOP\obj\Debug\net6.0\UdpServerExercisesOOP.AssemblyInfoInputs.cache
+E:\Up\Unity\Tang\Tang-Web\Unity-Web\Server Console Application\UdpServer\UdpServerExercisesOOP\obj\Debug\net6.0\UdpServerExercisesOOP.AssemblyInfo.cs
+E:\Up\Unity\Tang\Tang-Web\Unity-Web\Server Console Application\UdpServer\UdpServerExercisesOOP\obj\Debug\net6.0\UdpServerExercisesOOP.csproj.CoreCompileInputs.cache
+E:\Up\Unity\Tang\Tang-Web\Unity-Web\Server Console Application\UdpServer\UdpServerExercisesOOP\obj\Debug\net6.0\UdpServerExercisesOOP.dll
+E:\Up\Unity\Tang\Tang-Web\Unity-Web\Server Console Application\UdpServer\UdpServerExercisesOOP\obj\Debug\net6.0\refint\UdpServerExercisesOOP.dll
+E:\Up\Unity\Tang\Tang-Web\Unity-Web\Server Console Application\UdpServer\UdpServerExercisesOOP\obj\Debug\net6.0\UdpServerExercisesOOP.pdb
+E:\Up\Unity\Tang\Tang-Web\Unity-Web\Server Console Application\UdpServer\UdpServerExercisesOOP\obj\Debug\net6.0\UdpServerExercisesOOP.genruntimeconfig.cache
+E:\Up\Unity\Tang\Tang-Web\Unity-Web\Server Console Application\UdpServer\UdpServerExercisesOOP\obj\Debug\net6.0\ref\UdpServerExercisesOOP.dll

@@ -1,0 +1,15 @@
+E:\Up\Unity\Tang\Tang-Web\Unity-Web\Server Console Application\TcpSeaver\TcpServerAsync\bin\Debug\net6.0\TcpServerAsync.exe
+E:\Up\Unity\Tang\Tang-Web\Unity-Web\Server Console Application\TcpSeaver\TcpServerAsync\bin\Debug\net6.0\TcpServerAsync.deps.json
+E:\Up\Unity\Tang\Tang-Web\Unity-Web\Server Console Application\TcpSeaver\TcpServerAsync\bin\Debug\net6.0\TcpServerAsync.runtimeconfig.json
+E:\Up\Unity\Tang\Tang-Web\Unity-Web\Server Console Application\TcpSeaver\TcpServerAsync\bin\Debug\net6.0\TcpServerAsync.dll
+E:\Up\Unity\Tang\Tang-Web\Unity-Web\Server Console Application\TcpSeaver\TcpServerAsync\bin\Debug\net6.0\TcpServerAsync.pdb
+E:\Up\Unity\Tang\Tang-Web\Unity-Web\Server Console Application\TcpSeaver\TcpServerAsync\obj\Debug\net6.0\TcpServerAsync.csproj.AssemblyReference.cache
+E:\Up\Unity\Tang\Tang-Web\Unity-Web\Server Console Application\TcpSeaver\TcpServerAsync\obj\Debug\net6.0\TcpServerAsync.GeneratedMSBuildEditorConfig.editorconfig
+E:\Up\Unity\Tang\Tang-Web\Unity-Web\Server Console Application\TcpSeaver\TcpServerAsync\obj\Debug\net6.0\TcpServerAsync.AssemblyInfoInputs.cache
+E:\Up\Unity\Tang\Tang-Web\Unity-Web\Server Console Application\TcpSeaver\TcpServerAsync\obj\Debug\net6.0\TcpServerAsync.AssemblyInfo.cs
+E:\Up\Unity\Tang\Tang-Web\Unity-Web\Server Console Application\TcpSeaver\TcpServerAsync\obj\Debug\net6.0\TcpServerAsync.csproj.CoreCompileInputs.cache
+E:\Up\Unity\Tang\Tang-Web\Unity-Web\Server Console Application\TcpSeaver\TcpServerAsync\obj\Debug\net6.0\TcpServerAsync.dll
+E:\Up\Unity\Tang\Tang-Web\Unity-Web\Server Console Application\TcpSeaver\TcpServerAsync\obj\Debug\net6.0\refint\TcpServerAsync.dll
+E:\Up\Unity\Tang\Tang-Web\Unity-Web\Server Console Application\TcpSeaver\TcpServerAsync\obj\Debug\net6.0\TcpServerAsync.pdb
+E:\Up\Unity\Tang\Tang-Web\Unity-Web\Server Console Application\TcpSeaver\TcpServerAsync\obj\Debug\net6.0\TcpServerAsync.genruntimeconfig.cache
+E:\Up\Unity\Tang\Tang-Web\Unity-Web\Server Console Application\TcpSeaver\TcpServerAsync\obj\Debug\net6.0\ref\TcpServerAsync.dll

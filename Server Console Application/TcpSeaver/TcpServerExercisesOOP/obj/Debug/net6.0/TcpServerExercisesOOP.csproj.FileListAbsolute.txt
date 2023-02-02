@@ -1,0 +1,15 @@
+E:\Up\Unity\Tang\Tang-Web\Unity-Web\Server Console Application\TcpSeaver\TcpServerExercisesOOP\bin\Debug\net6.0\TcpServerExercisesOOP.exe
+E:\Up\Unity\Tang\Tang-Web\Unity-Web\Server Console Application\TcpSeaver\TcpServerExercisesOOP\bin\Debug\net6.0\TcpServerExercisesOOP.deps.json
+E:\Up\Unity\Tang\Tang-Web\Unity-Web\Server Console Application\TcpSeaver\TcpServerExercisesOOP\bin\Debug\net6.0\TcpServerExercisesOOP.runtimeconfig.json
+E:\Up\Unity\Tang\Tang-Web\Unity-Web\Server Console Application\TcpSeaver\TcpServerExercisesOOP\bin\Debug\net6.0\TcpServerExercisesOOP.dll
+E:\Up\Unity\Tang\Tang-Web\Unity-Web\Server Console Application\TcpSeaver\TcpServerExercisesOOP\bin\Debug\net6.0\TcpServerExercisesOOP.pdb
+E:\Up\Unity\Tang\Tang-Web\Unity-Web\Server Console Application\TcpSeaver\TcpServerExercisesOOP\obj\Debug\net6.0\TcpServerExercisesOOP.csproj.AssemblyReference.cache
+E:\Up\Unity\Tang\Tang-Web\Unity-Web\Server Console Application\TcpSeaver\TcpServerExercisesOOP\obj\Debug\net6.0\TcpServerExercisesOOP.GeneratedMSBuildEditorConfig.editorconfig
+E:\Up\Unity\Tang\Tang-Web\Unity-Web\Server Console Application\TcpSeaver\TcpServerExercisesOOP\obj\Debug\net6.0\TcpServerExercisesOOP.AssemblyInfoInputs.cache
+E:\Up\Unity\Tang\Tang-Web\Unity-Web\Server Console Application\TcpSeaver\TcpServerExercisesOOP\obj\Debug\net6.0\TcpServerExercisesOOP.AssemblyInfo.cs
+E:\Up\Unity\Tang\Tang-Web\Unity-Web\Server Console Application\TcpSeaver\TcpServerExercisesOOP\obj\Debug\net6.0\TcpServerExercisesOOP.csproj.CoreCompileInputs.cache
+E:\Up\Unity\Tang\Tang-Web\Unity-Web\Server Console Application\TcpSeaver\TcpServerExercisesOOP\obj\Debug\net6.0\TcpServerExercisesOOP.dll
+E:\Up\Unity\Tang\Tang-Web\Unity-Web\Server Console Application\TcpSeaver\TcpServerExercisesOOP\obj\Debug\net6.0\refint\TcpServerExercisesOOP.dll
+E:\Up\Unity\Tang\Tang-Web\Unity-Web\Server Console Application\TcpSeaver\TcpServerExercisesOOP\obj\Debug\net6.0\TcpServerExercisesOOP.pdb
+E:\Up\Unity\Tang\Tang-Web\Unity-Web\Server Console Application\TcpSeaver\TcpServerExercisesOOP\obj\Debug\net6.0\TcpServerExercisesOOP.genruntimeconfig.cache
+E:\Up\Unity\Tang\Tang-Web\Unity-Web\Server Console Application\TcpSeaver\TcpServerExercisesOOP\obj\Debug\net6.0\ref\TcpServerExercisesOOP.dll
