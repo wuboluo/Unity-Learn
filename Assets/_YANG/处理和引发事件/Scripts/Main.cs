@@ -1,8 +1,7 @@
-using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace YANG.Event
+namespace Yang.Event
 {
     // https://learn.microsoft.com/zh-cn/dotnet/standard/events/
 

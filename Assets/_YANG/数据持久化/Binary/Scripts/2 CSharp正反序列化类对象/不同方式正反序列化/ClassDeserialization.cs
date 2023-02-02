@@ -1,9 +1,8 @@
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 using UnityEngine;
-using UnityEngine.UI;
 
-namespace DataPersistence_Binary
+namespace Yang.DataPersistence.Binary
 {
     // 通过断点快速查看反序列化结果
     public class ClassDeserialization : MonoBehaviour

@@ -1,8 +1,11 @@
-public interface ICommand
+namespace Yang.DesignMode.Command
 {
-    // 重做 Y
-    void Redo();
+    public interface ICommand
+    {
+        // 重做 Y
+        void Redo();
 
-    // 撤销 Z
-    void Undo();
+        // 撤销 Z
+        void Undo();
+    }
 }

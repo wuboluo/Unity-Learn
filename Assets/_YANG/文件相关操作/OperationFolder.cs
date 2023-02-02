@@ -1,7 +1,7 @@
 using System.IO;
 using UnityEngine;
 
-namespace FileFolderOperation
+namespace Yang.FileFolderOperation
 {
     public class OperationFolder : MonoBehaviour
     {

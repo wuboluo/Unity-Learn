@@ -3,7 +3,7 @@ using System.IO;
 using System.Linq;
 using UnityEngine;
 
-namespace FileFolderOperation
+namespace Yang.FileFolderOperation
 {
     public class OperationFile : MonoBehaviour
     {

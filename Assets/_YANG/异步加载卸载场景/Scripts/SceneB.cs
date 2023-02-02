@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-namespace YANG.LoadScene
+namespace Yang.LoadScene
 {
     public class SceneB : MonoBehaviour
     {
@@ -23,7 +23,7 @@ namespace YANG.LoadScene
             SceneManager.UnloadSceneAsync("SceneB").completed += OnUnloadSceneAsyncComplete;
         }
 
-        private void OnUnloadSceneAsyncComplete(AsyncOperation obj)
+        private static void OnUnloadSceneAsyncComplete(AsyncOperation obj)
         {
             Debug.Log("SceneB 异步卸载完成");
         }

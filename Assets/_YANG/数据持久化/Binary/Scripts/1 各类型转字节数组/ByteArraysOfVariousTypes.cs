@@ -2,7 +2,7 @@ using System;
 using System.Text;
 using UnityEngine;
 
-namespace DataPersistence_Binary
+namespace Yang.DataPersistence.Binary
 {
     public class ByteArraysOfVariousTypes : MonoBehaviour
     {

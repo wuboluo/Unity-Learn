@@ -3,7 +3,7 @@ using System.Reflection;
 using System.Xml;
 using UnityEngine;
 
-namespace YANG.DependencyInjection_Reflection
+namespace Yang.DependencyInjection_Reflection
 {
     public static class ReflectionFactory
     {

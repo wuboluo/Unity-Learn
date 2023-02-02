@@ -5,46 +5,52 @@
 // Boss有技能，小怪有攻击
 // 随机生成10个怪，装载到数组中
 // 遍历这个数组，调用他们的攻击方法，如果是boss就释放技能
-public class CSharp_7_Questions : MonoBehaviour
-{
-    private void Start()
-    {
-        Monster[] monsters = new Monster[10];
-        for (int i = 0; i < monsters.Length; i++)
-        {
-            monsters[i] = RandomCreateMonster();
-            print(monsters[i].GetType());
 
-            switch (monsters[i])
+namespace Yang.CSharpGrammar
+{
+    public class CSharp_7_Questions : MonoBehaviour
+    {
+        private void Start()
+        {
+            Monster[] monsters = new Monster[10];
+            for (int i = 0; i < monsters.Length; i++)
             {
-                case Boss b: b.Skill();
-                    break;
-                case Goblin g: g.Attack();
-                    break;
+                monsters[i] = RandomCreateMonster();
+                print(monsters[i].GetType());
+
+                switch (monsters[i])
+                {
+                    case Boss:
+                        Boss.Skill();
+                        break;
+                    case Goblin:
+                        Goblin.Attack();
+                        break;
+                }
             }
+        }
+
+        private static Monster RandomCreateMonster()
+        {
+            float res = Random.value;
+
+            if (res >= 0.5f) return new Boss();
+            return new Goblin();
         }
     }
 
-    private Monster RandomCreateMonster()
+
+    public class Monster
     {
-        float res = Random.value;
-
-        if (res >= 0.5f) return new Boss();
-        return new Goblin();
     }
-}
 
+    public class Boss : Monster
+    {
+        public static void Skill() => Debug.Log("Boss Skill");
+    }
 
-public class Monster
-{
-}
-
-public class Boss : Monster
-{
-    public void Skill() => Debug.Log("Boss Skill");
-}
-
-public class Goblin : Monster
-{
-    public void Attack() => Debug.Log("Goblin Attack");
+    public class Goblin : Monster
+    {
+        public static void Attack() => Debug.Log("Goblin Attack");
+    }
 }

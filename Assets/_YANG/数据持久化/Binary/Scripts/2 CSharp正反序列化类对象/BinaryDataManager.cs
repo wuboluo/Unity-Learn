@@ -3,7 +3,7 @@ using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 using UnityEngine;
 
-namespace DataPersistence_Binary
+namespace Yang.DataPersistence.Binary
 {
     // 目标：实现一个管理类，用于快捷读写自定义类对象数据
     public class BinaryDataManager

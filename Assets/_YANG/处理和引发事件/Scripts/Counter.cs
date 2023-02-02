@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace YANG.Event
+namespace Yang.Event
 {
     /// EventSender 事件发送方
     public sealed class Counter

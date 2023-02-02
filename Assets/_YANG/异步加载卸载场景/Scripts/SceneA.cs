@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-namespace YANG.LoadScene
+namespace Yang.LoadScene
 {
     public class SceneA : MonoBehaviour
     {
@@ -19,7 +19,7 @@ namespace YANG.LoadScene
             SceneManager.LoadSceneAsync("SceneB", LoadSceneMode.Additive).completed += OnLoadSceneAsyncComplete;
         }
 
-        private void OnLoadSceneAsyncComplete(AsyncOperation obj)
+        private static void OnLoadSceneAsyncComplete(AsyncOperation obj)
         {
         }
     }

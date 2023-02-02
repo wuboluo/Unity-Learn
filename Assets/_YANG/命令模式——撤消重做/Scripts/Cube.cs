@@ -1,6 +1,9 @@
 using UnityEngine;
 
-public class Cube : MonoBehaviour
+namespace Yang.DesignMode.Command
 {
-    public int id;
+    public class Cube : MonoBehaviour
+    {
+        public int id;
+    }
 }

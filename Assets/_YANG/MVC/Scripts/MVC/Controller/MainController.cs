@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace MVC
+namespace Yang.MVC
 {
     public class MainController : MonoBehaviour
     {

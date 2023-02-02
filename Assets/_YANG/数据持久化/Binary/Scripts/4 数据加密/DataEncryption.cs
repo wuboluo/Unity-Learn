@@ -2,7 +2,7 @@ using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 using UnityEngine;
 
-namespace DataPersistence_Binary
+namespace Yang.DataPersistence.Binary
 {
     public class DataEncryption : MonoBehaviour
     {

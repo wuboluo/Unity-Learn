@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace DataPersistence_Binary
+namespace Yang.DataPersistence.Binary
 {
     public class SaveOrReadBinaryExample : MonoBehaviour
     {

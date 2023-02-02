@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace MVC
+namespace Yang.MVC
 {
     [CreateAssetMenu(menuName = "MVC/Model/MainModel")]
     public class MainModelSO : ScriptableObject

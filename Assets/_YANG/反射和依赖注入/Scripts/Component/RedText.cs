@@ -1,4 +1,4 @@
-﻿namespace YANG.DependencyInjection_Reflection
+﻿namespace Yang.DependencyInjection_Reflection
 {
     public class RedText : IShowInfo
     {

@@ -2,7 +2,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace MVC
+namespace Yang.MVC
 {
     public class MainView : MonoBehaviour
     {

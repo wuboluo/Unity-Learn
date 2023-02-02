@@ -4,7 +4,7 @@ using System.IO;
 using System.Text;
 using UnityEngine;
 
-namespace DataPersistence_Binary
+namespace Yang.DataPersistence.Binary
 {
     // 目标：为Student类实现保存和读取二进制文件的方法
     public class CustomClassToBinaryExample : MonoBehaviour

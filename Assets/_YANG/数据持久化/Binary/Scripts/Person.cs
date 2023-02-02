@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace DataPersistence_Binary
+namespace Yang.DataPersistence.Binary
 {
     // 如果要使用C#自带的序列化二进制方法
     // 声明类时需要添加 [Serializable] 特性

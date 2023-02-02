@@ -1,27 +1,30 @@
 using UnityEngine;
 
-public class PlaceCubeCommand : ICommand
+namespace Yang.DesignMode.Command
 {
-    private readonly Transform _cube;
-    private readonly Vector3 _position;
-    private readonly int _id;
-
-    public PlaceCubeCommand(Transform cube, Vector3 position, int id)
+    public class PlaceCubeCommand : ICommand
     {
-        _cube = cube;
-        _position = position;
-        _id = id;
-    }
+        private readonly Transform _cube;
+        private readonly Vector3 _position;
+        private readonly int _id;
 
-    // 重做，前进命令
-    public void Redo()
-    {
-        CubePlacer.PlaceCube(_cube, _position, _id);
-    }
+        public PlaceCubeCommand(Transform cube, Vector3 position, int id)
+        {
+            _cube = cube;
+            _position = position;
+            _id = id;
+        }
 
-    // 撤销，回退命令
-    public void Undo()
-    {
-        CubePlacer.RemoveCube(_position, _id);
+        // 重做，前进命令
+        public void Redo()
+        {
+            CubePlacer.PlaceCube(_cube, _position, _id);
+        }
+
+        // 撤销，回退命令
+        public void Undo()
+        {
+            CubePlacer.RemoveCube(_position, _id);
+        }
     }
 }
