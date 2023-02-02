@@ -20,11 +20,6 @@ namespace DataPersistence_Binary
             {
                 TestClass result = BinaryDataManager.Read<TestClass>("TC");
             }
-
-            // TODO：待整理
-            BinaryDataManager.Instance.InitData();
-            ItemDataContainer container = BinaryDataManager.Instance.GetTable<ItemDataContainer>();
-            print(container.Dic[1].Description);
         }
     }
 

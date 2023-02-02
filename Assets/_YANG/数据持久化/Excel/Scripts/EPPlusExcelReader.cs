@@ -3,23 +3,22 @@ using OfficeOpenXml;
 using UnityEditor;
 using UnityEngine;
 
-namespace DataPersistence_Binary
+namespace DataPersistence_Excel
 {
-    public class EPPlusExcel : MonoBehaviour
+    public class EPPlusExcelReader : MonoBehaviour
     {
         private void Start()
         {
-            // ReadExcel();
+            string path = $"{Application.streamingAssetsPath}/Excel_配置/ExampleExcel.xlsx";
 
-            GenerateExcel();
+            ReadExcel(path);
+            // GenerateExcel(path);
         }
 
-        private void ReadExcel()
+        private static void ReadExcel(string path)
         {
-            string filePath = @$"{Application.dataPath}\Data\ExampleExcel.xlsx";
-
             // 获取Excel文件信息
-            FileInfo fileInfo = new FileInfo(filePath);
+            FileInfo fileInfo = new FileInfo(path);
 
             // 通过Excel表格的文件信息，打开Excel表格
             using ExcelPackage excelPackage = new ExcelPackage(fileInfo);
@@ -29,25 +28,23 @@ namespace DataPersistence_Binary
 
             // 获得某一个单元格的信息（索引从 1 开始）
             string firstCell = firstSheet.Cells[1, 1].Value.ToString();
-            print(firstCell);
+            print("(1,1)单元格内容：" + firstCell);
 
             // 将所有单元格信息保存下来。因为另存到了一个新的二维数组，所以索引从 0 开始
             if (firstSheet.Cells.Value is object[,] cells)
             {
-                var rowCount = firstSheet.Dimension.End.Row;
-                var columnCount = firstSheet.Dimension.End.Column;
+                int rowCount = firstSheet.Dimension.End.Row;
+                int columnCount = firstSheet.Dimension.End.Column;
 
-                print(cells[0, 0]);
-                print(cells[rowCount - 1, columnCount - 1]);
+                print("含有内容的最左上角单元格内容：" + cells[0, 0]);
+                print("含有内容的最右下角单元格内容：" + cells[rowCount - 1, columnCount - 1]);
             }
         }
 
-        private void GenerateExcel()
+        private void GenerateExcel(string path)
         {
-            string newExcelFilePath = @$"{Application.dataPath}\Data\NewExcel.xlsx";
-
             // 得到文件信息。但是如果这个Excel文件不存在，不会报错，只是不包括Excel文件的信息而已
-            FileInfo fileInfo = new FileInfo(newExcelFilePath);
+            FileInfo fileInfo = new FileInfo(path);
 
             using ExcelPackage excelPackage = new ExcelPackage(fileInfo);
 
@@ -57,7 +54,6 @@ namespace DataPersistence_Binary
 
             // 删除一张表
             excelPackage.Workbook.Worksheets.Delete("XY");
-
 
             excelPackage.Save();
             AssetDatabase.Refresh();
