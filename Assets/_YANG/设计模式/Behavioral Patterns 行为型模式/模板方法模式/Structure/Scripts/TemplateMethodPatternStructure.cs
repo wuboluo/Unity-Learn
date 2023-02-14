@@ -2,7 +2,7 @@
 
 namespace Yang.DesignPattern.TemplateMethod.Structure
 {
-    public class TemplateMethodStructure : MonoBehaviour
+    public class TemplateMethodPatternStructure : MonoBehaviour
     {
         private void Start()
         {

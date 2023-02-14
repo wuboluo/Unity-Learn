@@ -2,7 +2,7 @@
 
 namespace Yang.DesignPattern.TemplateMethod.Example
 {
-    public class TemplateMethodExample : MonoBehaviour
+    public class TemplateMethodPatternExample : MonoBehaviour
     {
         private void Start()
         {
