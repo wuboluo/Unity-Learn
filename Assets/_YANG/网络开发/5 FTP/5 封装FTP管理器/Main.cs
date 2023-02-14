@@ -55,7 +55,7 @@ namespace Yang.Net.FTP
                     return;
                 }
 
-                foreach (var fileName in list)
+                foreach (string fileName in list)
                 {
                     print(fileName);
                 }

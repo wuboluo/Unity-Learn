@@ -57,7 +57,7 @@ namespace Yang.Net.Tcp.Sync
                 switch (msg)
                 {
                     case Example_PlayerMessage playerMsg:
-                        var content = $"{playerMsg.playerID}-{playerMsg.playerData.playerName}-{playerMsg.playerData.playerAtk}-{playerMsg.playerData.playerDef}";
+                        string content = $"{playerMsg.playerID}-{playerMsg.playerData.playerName}-{playerMsg.playerData.playerAtk}-{playerMsg.playerData.playerDef}";
                         Debug.Log($"收到服务器 {clientSocket.RemoteEndPoint} 发来的消息：{content}");
                         break;
                 }
@@ -95,7 +95,7 @@ namespace Yang.Net.Tcp.Sync
             }
             catch (SocketException se)
             {
-                var log = se.ErrorCode == 10061
+                string log = se.ErrorCode == 10061
                     ? "服务器拒绝连接"
                     : "服务器连接失败，" + $"{se.ErrorCode}-{se.Message}";
 
@@ -146,7 +146,7 @@ namespace Yang.Net.Tcp.Sync
         /// <param name="rNumber">收到的这条消息的总长度（可能存在分包粘包）</param>
         private void HandleReceivedMessage(byte[] rBytes, int rNumber)
         {
-            var msgID = 0;
+            int msgID = 0;
             int currentIndex = 0; // 当前解析到的位置
 
             // 收到消息时，先查看是否已有缓存的消息字节数组。如果有，就直接拼接到后面（缓存数组的尾部）
@@ -156,7 +156,7 @@ namespace Yang.Net.Tcp.Sync
             while (true)
             {
                 // 每次将信息长度重置，是为了避免上一次解析的数据 影响这次的判断
-                var msgLength = -1; // 消息长度
+                int msgLength = -1; // 消息长度
 
                 if (cacheNumber >= currentIndex)
                 {

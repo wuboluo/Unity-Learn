@@ -234,7 +234,7 @@ namespace Yang.Net.Tcp.Async
                     // 收到了多少字节
                     int num = s.EndReceive(result);
                     // 消息处理（示例）
-                    var exampleStr = Encoding.UTF8.GetString(resultBytes, 0, num);
+                    string exampleStr = Encoding.UTF8.GetString(resultBytes, 0, num);
 
                     // 继续接收（注意不是递归）
                     s.BeginReceive(resultBytes, 0, resultBytes.Length, SocketFlags.None, ReceiveCallback, s);

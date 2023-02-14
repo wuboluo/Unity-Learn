@@ -26,7 +26,7 @@ namespace Yang.CSharpGrammar
             // 作用：无需指定类型名称即可访问其静态成员和嵌套类型
             // 好处：节约代码量，可以写出更简洁的代码
 
-            var max = Max(10, 20);
+            int max = Max(10, 20);
             MyClass2.StaticMethod();
             MyClass2.InternalClass ic = new MyClass2.InternalClass();
 

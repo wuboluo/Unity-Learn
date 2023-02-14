@@ -12,7 +12,7 @@ namespace Yang.Net.Udp.Sync
         {
             if (UdpNetManager.Instance == null)
             {
-                var obj = new GameObject("UdpNetManager");
+                GameObject obj = new GameObject("UdpNetManager");
                 obj.AddComponent<UdpNetManager>();
             }
 

@@ -169,7 +169,7 @@ namespace Yang.Net.Tcp.Async
             while (true)
             {
                 // 每次将信息长度重置，是为了避免上一次解析的数据 影响这次的判断
-                var msgLength = -1;
+                int msgLength = -1;
 
                 // 处理解析第一条消息
                 // 如果缓存容器中存放的字节长度，相比上次解析到的位置，相距8位以上（意味着可以解析消息ID和消息长度）

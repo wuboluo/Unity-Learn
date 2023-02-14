@@ -122,10 +122,10 @@ namespace Yang.Net.Udp.Async
         // 解析消息内容
         private void ParseMessage(SocketAsyncEventArgs args)
         {
-            var currentLength = 0;
+            int currentLength = 0;
 
             // 解析ID
-            var msgID = BitConverter.ToInt32(args.Buffer, currentLength);
+            int msgID = BitConverter.ToInt32(args.Buffer, currentLength);
             currentLength += 4;
 
             // 解析长度

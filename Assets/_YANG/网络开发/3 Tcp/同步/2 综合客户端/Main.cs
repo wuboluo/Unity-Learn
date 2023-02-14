@@ -17,7 +17,7 @@ namespace Yang.Net.Tcp.Sync
         {
             if (TcpNetManager.Instance == null)
             {
-                var obj = new GameObject("NetAsyncManager");
+                GameObject obj = new GameObject("NetAsyncManager");
                 obj.AddComponent<TcpNetManager>();
             }
 
