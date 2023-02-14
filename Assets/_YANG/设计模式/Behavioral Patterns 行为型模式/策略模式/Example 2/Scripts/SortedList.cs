@@ -22,7 +22,7 @@ namespace Yang.DesignPattern.Strategy.Example2
         public void Sort()
         {
             _sortStrategy.Sort(_list);
-            foreach (var name in _list)
+            foreach (string name in _list)
             {
                 Debug.Log(name);
             }
