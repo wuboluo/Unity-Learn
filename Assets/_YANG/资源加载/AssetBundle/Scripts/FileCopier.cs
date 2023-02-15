@@ -20,7 +20,7 @@ namespace Yang.AssetLoading.AssetBundle
             string streamingPath = Application.streamingAssetsPath + "/" + fileName;
             string persistentPath = Application.persistentDataPath + "/" + fileName;
 
-            var www = new WWW(streamingPath);
+            WWW www = new WWW(streamingPath);
             yield return www;
 
             if (!string.IsNullOrEmpty(www.error))
