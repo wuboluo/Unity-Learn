@@ -9,8 +9,8 @@ namespace Yang.DesignPattern.AbstractFactory.Example3
             // 美的厂家
             IFactory mdFactory = new MDFactory();
             // 美的冰箱、空调
-            var mdFridge = mdFactory.GetFridge();
-            var mdAirConditioner = mdFactory.GetAriConditioner();
+            Fridge mdFridge = mdFactory.GetFridge();
+            AirConditioner mdAirConditioner = mdFactory.GetAriConditioner();
             // 生产
             mdFridge.Produce();
             mdAirConditioner.Produce();
@@ -18,8 +18,8 @@ namespace Yang.DesignPattern.AbstractFactory.Example3
             // 格力厂家
             IFactory glFactory = new GLFactory();
             // 格力冰箱、空调
-            var glFridge = glFactory.GetFridge();
-            var glAirConditioner = glFactory.GetAriConditioner();
+            Fridge glFridge = glFactory.GetFridge();
+            AirConditioner glAirConditioner = glFactory.GetAriConditioner();
             // 生产
             glFridge.Produce();
             glAirConditioner.Produce();
