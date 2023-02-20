@@ -1,4 +1,4 @@
-namespace Yang.DesignPattern.Command
+namespace Yang.DesignPattern.Command.Example
 {
     public interface ICommand
     {

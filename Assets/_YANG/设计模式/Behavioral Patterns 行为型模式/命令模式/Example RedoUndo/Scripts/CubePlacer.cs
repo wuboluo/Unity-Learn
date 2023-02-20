@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Yang.DesignPattern.Command
+namespace Yang.DesignPattern.Command.Example
 {
     // 命令的具体执行内容
     

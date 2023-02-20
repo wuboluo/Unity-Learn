@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Yang.DesignPattern.Command
+namespace Yang.DesignPattern.Command.Example
 {
     public class CommandInvoker : MonoBehaviour
     {
