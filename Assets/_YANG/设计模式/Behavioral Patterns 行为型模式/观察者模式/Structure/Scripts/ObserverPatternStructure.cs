@@ -7,7 +7,7 @@ namespace Yang.DesignPattern.Observer.Structure
         private void Start()
         {
             // 一个具体的主题（被观察对象）
-            var s = new ConcreteSubject();
+            ConcreteSubject s = new ConcreteSubject();
 
             // 同时被三个观察者订阅
             s.Attach(new ConcreteObserver(s, "X"));

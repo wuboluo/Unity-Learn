@@ -30,7 +30,7 @@ namespace Yang.DesignPattern.Interpreter.Example2
         {
             _stockSold = false;
 
-            for (var i = 0; i < _buyOffers.Count; i++)
+            for (int i = 0; i < _buyOffers.Count; i++)
             {
                 StockOffer offer = _buyOffers[i];
                 if (offer.Stock == stock && offer.StockShares == shares)
@@ -56,7 +56,7 @@ namespace Yang.DesignPattern.Interpreter.Example2
         {
             _stockBought = false;
 
-            for (var i = 0; i < _sellOffers.Count; i++)
+            for (int i = 0; i < _sellOffers.Count; i++)
             {
                 StockOffer offer = _sellOffers[i];
                 if (offer.Stock == stock && offer.StockShares == shares)

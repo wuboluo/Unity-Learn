@@ -13,7 +13,7 @@ namespace Yang.DesignPattern.ChainOfResponsibility.Structure
             h2.SetSuccessor(h3);
 
             int[] requests = { 2, 6, 34, 9, 16, 24, 29 };
-            foreach (var request in requests) h1.HandleRequest(request);
+            foreach (int request in requests) h1.HandleRequest(request);
         }
     }
 }

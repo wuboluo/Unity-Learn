@@ -21,7 +21,7 @@ namespace Yang.DesignPattern.Observer.Structure
 
         public void Notify()
         {
-            foreach (var o in _observers) o.Update();
+            foreach (Observer o in _observers) o.Update();
         }
     }
 }

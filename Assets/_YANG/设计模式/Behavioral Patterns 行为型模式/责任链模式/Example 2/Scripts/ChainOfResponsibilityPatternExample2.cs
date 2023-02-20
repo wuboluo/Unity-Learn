@@ -15,13 +15,13 @@ namespace Yang.DesignPattern.ChainOfResponsibility.Example2
             calcSub.SetNextChain(calcMul);
             calcMul.SetNextChain(calcDiv);
 
-            var n1 = new Numbers(3, 5, CalculationType.Addition);
+            Numbers n1 = new Numbers(3, 5, CalculationType.Addition);
             calcAdd.Calculate(n1);
 
-            var n2 = new Numbers(6, 2, CalculationType.Multiplication);
+            Numbers n2 = new Numbers(6, 2, CalculationType.Multiplication);
             calcAdd.Calculate(n2);
 
-            var n3 = new Numbers(12, 3, CalculationType.Subtraction);
+            Numbers n3 = new Numbers(12, 3, CalculationType.Subtraction);
             calcAdd.Calculate(n3);
         }
     }
