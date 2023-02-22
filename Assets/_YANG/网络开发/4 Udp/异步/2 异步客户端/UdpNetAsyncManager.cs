@@ -12,19 +12,19 @@ namespace Yang.Net.Udp.Async
         // 存放服务器发来的消息的缓存容器
         private readonly byte[] cacheBytes = new byte[512];
 
-        // 客户端是否连接
-        private bool isConnected;
-
         // 服务器发来的消息队列
         private readonly Queue<MessageBase> receiveQueue = new();
+        private IPEndPoint ipPoint;
+
+        // 客户端是否连接
+        private bool isConnected;
 
         // 服务器
         private EndPoint serverPoint;
 
         // 客户端Socket
         private Socket socket;
-        private IPEndPoint ipPoint;
-        
+
         public static UdpNetAsyncManager Instance { get; private set; }
 
         private void Awake()
@@ -104,7 +104,7 @@ namespace Yang.Net.Udp.Async
                     args.SetBuffer(bytes, 0, bytes.Length); // 发送的数据
                     args.Completed += SendToCallback; // 发送完成回调
                     args.RemoteEndPoint = serverPoint; // 设置远端目标
-                    
+
                     // 异步发送
                     socket.SendToAsync(args);
                 }
@@ -151,15 +151,12 @@ namespace Yang.Net.Udp.Async
         private void ReceiveFromCallback(object obj, SocketAsyncEventArgs args)
         {
             if (args.SocketError == SocketError.Success)
-            {
                 try
                 {
                     // 要是服务器发的才处理
                     if (args.RemoteEndPoint.Equals(serverPoint))
-                    {
                         // 处理消息内容
                         ParseMessage(args);
-                    }
 
                     // 再次接收消息
                     if (socket != null && isConnected)
@@ -178,23 +175,14 @@ namespace Yang.Net.Udp.Async
                     print($"接收消息出错（可能是反序列化问题）：{e.Message}");
                     Close();
                 }
-            }
             else
-            {
                 print($"接收消息失败：{args.SocketError}");
-            }
         }
 
         // 发送消息完成回调
         private void SendToCallback(object obj, SocketAsyncEventArgs args)
         {
-            if (args.SocketError != SocketError.Success)
-            {
-                print($"发送消息失败：{args.SocketError}");
-            }
-            else
-            {
-            }
+            if (args.SocketError != SocketError.Success) print($"发送消息失败：{args.SocketError}");
         }
 
         // 关闭连接，释放socket

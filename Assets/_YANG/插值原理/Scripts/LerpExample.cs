@@ -7,13 +7,13 @@ namespace Yang.LerpPrinciple
     {
         public Transform tran;
 
-        [Header("Lerp")] private float timer;
-        private float x;
-
         [Header("AnimationCurve")] public AnimationCurve curve;
-        private float currentTime;
 
         private IEnumerator _moveCor;
+        private float currentTime;
+
+        [Header("Lerp")] private float timer;
+        private float x;
 
         private void Update()
         {

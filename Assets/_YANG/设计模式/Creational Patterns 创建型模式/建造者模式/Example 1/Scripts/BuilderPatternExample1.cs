@@ -14,11 +14,11 @@ namespace Yang.DesignPattern.Builder.Example1
             Shop.Construct(_builder);
             // 图纸车辆信息展示
             _builder.Vehicle.Show();
-            
+
             _builder = new MotorCycleBuilder();
             Shop.Construct(_builder);
             _builder.Vehicle.Show();
-            
+
             _builder = new ElectricCarVehicle();
             Shop.Construct(_builder);
             _builder.Vehicle.Show();

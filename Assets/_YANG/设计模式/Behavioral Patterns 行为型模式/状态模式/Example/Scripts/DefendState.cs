@@ -18,15 +18,9 @@ namespace Yang.DesignPattern.State.Example
 
         public void HandleInput()
         {
-            if (Input.GetKeyDown(KeyCode.UpArrow))
-            {
-                _player.SetPlayerState(new StandState(_player));
-            }
-            
-            if (Input.GetKeyDown(KeyCode.A))
-            {
-                _player.SetPlayerState(new AttackState(_player));
-            }
+            if (Input.GetKeyDown(KeyCode.UpArrow)) _player.SetPlayerState(new StandState(_player));
+
+            if (Input.GetKeyDown(KeyCode.A)) _player.SetPlayerState(new AttackState(_player));
         }
     }
 }

@@ -113,13 +113,7 @@ namespace Yang.Net.Tcp.Async
             eSend.SetBuffer(bytes2, 0, bytes2.Length);
             eSend.Completed += (socket, args) =>
             {
-                if (args.SocketError == SocketError.Success)
-                {
-                    print("发送成功");
-                }
-                else
-                {
-                }
+                if (args.SocketError == SocketError.Success) print("发送成功");
             };
             socketTcp.SendAsync(eSend);
 
@@ -147,10 +141,10 @@ namespace Yang.Net.Tcp.Async
             // C#网络通信中，异步主要存在两种方案：
             // 1，Begin开头
             // 内部开多线程，通过回调形式返回结果，需要和End相关方法，配合使用
-            
+
             // 2，Async结尾
             // 内部开多线程，通过回调形式返回结果，依赖SocketAsyncEventArgs对象配合使用，更加方便
-            
+
             #endregion
         }
 

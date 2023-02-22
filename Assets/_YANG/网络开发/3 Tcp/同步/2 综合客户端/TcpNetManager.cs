@@ -13,27 +13,28 @@ namespace Yang.Net.Tcp.Sync
 {
     public class TcpNetManager : MonoBehaviour
     {
+        private const int sendHeartbeatMsgDir = 2;
+
+        [Header("测试心跳检测超时关闭连接")] public bool heartbeatTimeout;
+
+        // 用于处理分包时，缓存的字节数组 和 字节数组长度
+        private readonly byte[] cacheBytes = new byte[1024 * 1024];
+
+        // 心跳消息，发送心跳消息间隔时间
+        private readonly HeartbeatMessage heartbeatMsg = new();
+
         // 用于接收消息的队列【中间容器】，子线程将收到的消息放进去，主线程从中取
         private readonly Queue<MessageBase> receiveMsgQueue = new();
 
         // 发送的消息队列。主线程将待发的消息放进去，发送线程从中取
         private readonly Queue<MessageBase> sendMsgQueue = new();
-
-        // 用于处理分包时，缓存的字节数组 和 字节数组长度
-        private readonly byte[] cacheBytes = new byte[1024 * 1024];
         private int cacheNumber;
 
         // 客户端Socket
         private Socket clientSocket;
 
-        // 心跳消息，发送心跳消息间隔时间
-        private readonly HeartbeatMessage heartbeatMsg = new();
-        private const int sendHeartbeatMsgDir = 2;
-
         // 是否和服务器处于连接状态
         private bool isConnected;
-
-        [Header("测试心跳检测超时关闭连接")] public bool heartbeatTimeout;
 
         public static TcpNetManager Instance { get; private set; }
 
@@ -99,7 +100,7 @@ namespace Yang.Net.Tcp.Sync
                     ? "服务器拒绝连接"
                     : "服务器连接失败，" + $"{se.ErrorCode}-{se.Message}";
 
-                Console.WriteLine(log);
+                Debug.Log(log);
             }
         }
 
@@ -114,12 +115,8 @@ namespace Yang.Net.Tcp.Sync
         private void SendMessage(object obj)
         {
             while (isConnected)
-            {
                 if (sendMsgQueue.Count > 0)
-                {
                     clientSocket.Send(sendMsgQueue.Dequeue().Writing());
-                }
-            }
         }
 
         // 接收消息
@@ -128,7 +125,6 @@ namespace Yang.Net.Tcp.Sync
             // 由于多线程不能访问主线程的内容
             // 所以接收到的消息会放到一个【中间容器】中，再由主线程去【中间容器】中取出使用
             while (isConnected)
-            {
                 if (clientSocket.Available > 0)
                 {
                     // 使用临时变量去接收，会增加性能消耗，但会节约内存
@@ -136,7 +132,6 @@ namespace Yang.Net.Tcp.Sync
                     int receiveNumber = clientSocket.Receive(receiveBytes);
                     HandleReceivedMessage(receiveBytes, receiveNumber);
                 }
-            }
         }
 
         /// <summary>
@@ -180,7 +175,7 @@ namespace Yang.Net.Tcp.Sync
                             msg.Reading(cacheBytes, currentIndex);
                             break;
                     }
-                    
+
                     // 如果这条消息成功解析，放入 已收到的消息队列，等待 update去逐条输出
                     if (msg != null) receiveMsgQueue.Enqueue(msg);
                     // 更新容器中解析到的位置
@@ -244,10 +239,7 @@ namespace Yang.Net.Tcp.Sync
         private void SendHeartbeatMessage()
         {
             // 连入服务器后，定时发送心跳消息
-            if (isConnected)
-            {
-                Send(heartbeatMsg);
-            }
+            if (isConnected) Send(heartbeatMsg);
         }
     }
 }

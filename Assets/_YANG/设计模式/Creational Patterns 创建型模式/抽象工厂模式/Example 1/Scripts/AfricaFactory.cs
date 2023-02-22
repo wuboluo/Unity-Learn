@@ -8,7 +8,7 @@
         {
             return new Wildebeest();
         }
-        
+
         // 生成食肉动物 狮子
         public override Carnivore CreateCarnivore()
         {

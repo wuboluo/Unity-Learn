@@ -1,6 +1,6 @@
 ﻿namespace Yang.DependencyInjection_Reflection
 {
-    public class WhiteText: IShowInfo
+    public class WhiteText : IShowInfo
     {
         public WhiteText()
         {

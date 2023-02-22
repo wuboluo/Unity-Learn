@@ -11,7 +11,7 @@
             ship.DisplayShip();
             ship.FollowHeroShip();
             ship.Shoot();
-            
+
             return ship;
         }
     }

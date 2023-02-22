@@ -8,10 +8,7 @@ namespace Yang.DesignPattern.Interpreter.Example1
 
         public override void Register(Participant participant)
         {
-            if (!_participants.ContainsValue(participant))
-            {
-                _participants[participant.Name] = participant;
-            }
+            if (!_participants.ContainsValue(participant)) _participants[participant.Name] = participant;
 
             participant.Chatroom = this;
         }

@@ -14,10 +14,8 @@ namespace Yang.DesignPattern.Iterator.Example2
 
             IEnumerator steamIterator = steam.GetIterator();
             while (steamIterator.MoveNext())
-            {
                 if (steamIterator.Current is GameInfo info)
                     Debug.Log(info.GetGameInfo());
-            }
         }
     }
 }

@@ -12,7 +12,7 @@ namespace Yang.DesignPattern.Observer.Example
 
             ibm.Price = 120.10f;
             ibm.Notify();
-            
+
             ibm.Price = 120.75f;
             ibm.Notify();
         }

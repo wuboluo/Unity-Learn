@@ -59,10 +59,7 @@ namespace Yang.DesignPattern.Command.Example
         public void AddCommand(ICommand command)
         {
             // >currentCommandIndex意味着插入新的命令时，处于保存的命令集合之间。那么相当于此条新命令开辟了新的道路，舍弃以此为界限之后保存的所有命令
-            while (_commandHistory.Count > currentCommandIndex)
-            {
-                _commandHistory.RemoveAt(currentCommandIndex);
-            }
+            while (_commandHistory.Count > currentCommandIndex) _commandHistory.RemoveAt(currentCommandIndex);
 
             // 将此条新命令添加至待执行队列
             _commandBuffer.Enqueue(command);

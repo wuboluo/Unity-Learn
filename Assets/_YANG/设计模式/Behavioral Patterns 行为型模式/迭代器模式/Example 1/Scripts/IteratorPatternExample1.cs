@@ -20,10 +20,7 @@ namespace Yang.DesignPattern.Iterator.Example1
             Iterator iterator = collection.CreateIterator();
             iterator.Step = 1;
 
-            for (_item = iterator.First(); !iterator.IsDone; _item = iterator.Next())
-            {
-                Debug.Log(_item.Name);
-            }
+            for (_item = iterator.First(); !iterator.IsDone; _item = iterator.Next()) Debug.Log(_item.Name);
         }
     }
 }

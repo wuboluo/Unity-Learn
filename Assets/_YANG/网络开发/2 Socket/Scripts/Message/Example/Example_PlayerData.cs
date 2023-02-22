@@ -8,9 +8,9 @@ namespace Yang.Net.S
     // 不需要被发送，只是用于序列化和反序列化
     public class Example_PlayerData : ObjectBinaryBase
     {
-        public string playerName;
         public int playerAtk;
         public int playerDef;
+        public string playerName;
 
         public override int GetBytesNumber()
         {

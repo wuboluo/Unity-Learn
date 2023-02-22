@@ -89,9 +89,7 @@ namespace Yang.Net.Udp.Sync
             EndPoint remotePoint = new IPEndPoint(IPAddress.Any, 0);
 
             while (isConnected)
-            {
-                if (socket is {Available: > 0})
-                {
+                if (socket is { Available: > 0 })
                     try
                     {
                         socket.ReceiveFrom(cacheBytes, ref remotePoint);
@@ -136,17 +134,13 @@ namespace Yang.Net.Udp.Sync
                     {
                         print($"接收消息错误，但非网络问题：{e.Message}");
                     }
-                }
-            }
         }
 
         // 发送消息
         private void SendMessage(object obj)
         {
             while (isConnected)
-            {
                 if (sendQueue.Count > 0)
-                {
                     try
                     {
                         socket.SendTo(sendQueue.Dequeue().Writing(), serverPoint);
@@ -155,8 +149,6 @@ namespace Yang.Net.Udp.Sync
                     {
                         print($"发送消息错误：{e.SocketErrorCode}-{e.Message}");
                     }
-                }
-            }
         }
 
         // 关闭

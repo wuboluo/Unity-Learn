@@ -1,8 +1,6 @@
 using System;
-using System.Collections;
 using System.IO;
 using System.Text;
-using JetBrains.Annotations;
 using UnityEngine;
 
 namespace Yang.FileFolderOperation
@@ -18,10 +16,9 @@ namespace Yang.FileFolderOperation
         // 可以通过FileStream以流的形式逐个读写
         // 例如：先存一个int(4个字节)，再存一个bool(1个字节)，再存一个string(n个字节)
 
-        
-        
+
         /// <summary>
-        /// 打开或创建指定文件——new FileStream
+        ///     打开或创建指定文件——new FileStream
         /// </summary>
         /// <param name="filePath">文件路径</param>
         private void OpenOrCreateFile_New(string filePath)
@@ -47,7 +44,7 @@ namespace Yang.FileFolderOperation
         }
 
         /// <summary>
-        /// 打开或创建指定文件——File.Create
+        ///     打开或创建指定文件——File.Create
         /// </summary>
         /// <param name="filePath">文件路径</param>
         private void OpenOrCreateFile_Create(string filePath)
@@ -66,7 +63,7 @@ namespace Yang.FileFolderOperation
         }
 
         /// <summary>
-        /// 打开或创建指定文件——File.Open
+        ///     打开或创建指定文件——File.Open
         /// </summary>
         /// <param name="filePath">文件路径</param>
         private void OpenOrCreateFile_Open(string filePath)
@@ -75,7 +72,7 @@ namespace Yang.FileFolderOperation
         }
 
         /// <summary>
-        /// 写入文件（举例：依次写入一个int和一个string）
+        ///     写入文件（举例：依次写入一个int和一个string）
         /// </summary>
         /// <param name="filePath">文件位置</param>
         private void Write(string filePath)
@@ -103,7 +100,7 @@ namespace Yang.FileFolderOperation
         }
 
         /// <summary>
-        /// 依次读取（举例：依次读取一个int和一个string）
+        ///     依次读取（举例：依次读取一个int和一个string）
         /// </summary>
         /// <param name="filePath"></param>
         private void SequenceRead(string filePath)
@@ -132,7 +129,7 @@ namespace Yang.FileFolderOperation
         }
 
         /// <summary>
-        /// 一次性读取再挨个读取
+        ///     一次性读取再挨个读取
         /// </summary>
         /// <param name="filePath"></param>
         private void GlobalRead(string filePath)

@@ -13,7 +13,7 @@ namespace Yang.DesignPattern.Interpreter.Structure
 
             concreteMediator.Colleague1 = c1;
             concreteMediator.Colleague2 = c2;
-            
+
             c1.Send("Hello, I'm C1");
             c2.Send("Hi, C2");
         }

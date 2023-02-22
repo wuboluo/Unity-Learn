@@ -4,7 +4,7 @@ namespace Yang.DesignPattern.State.Example
 {
     public class StandState : IPlayerBaseState
     {
-        private Player _player;
+        private readonly Player _player;
 
         public StandState(Player player)
         {
@@ -18,20 +18,11 @@ namespace Yang.DesignPattern.State.Example
 
         public void HandleInput()
         {
-            if (Input.GetKeyDown(KeyCode.UpArrow))
-            {
-                _player.SetPlayerState(new JumpState(_player));
-            }
+            if (Input.GetKeyDown(KeyCode.UpArrow)) _player.SetPlayerState(new JumpState(_player));
 
-            if (Input.GetKeyDown(KeyCode.A))
-            {
-                _player.SetPlayerState(new AttackState(_player));
-            }
-            
-            if (Input.GetKeyDown(KeyCode.D))
-            {
-                _player.SetPlayerState(new DefendState(_player));
-            }
+            if (Input.GetKeyDown(KeyCode.A)) _player.SetPlayerState(new AttackState(_player));
+
+            if (Input.GetKeyDown(KeyCode.D)) _player.SetPlayerState(new DefendState(_player));
         }
     }
 }

@@ -7,7 +7,7 @@ namespace Yang.DesignPattern.Strategy.Example2
         private void Start()
         {
             SortedList studentRecords = new SortedList();
-            
+
             studentRecords.Add("Samuel");
             studentRecords.Add("Jimmy");
             studentRecords.Add("Sandra");

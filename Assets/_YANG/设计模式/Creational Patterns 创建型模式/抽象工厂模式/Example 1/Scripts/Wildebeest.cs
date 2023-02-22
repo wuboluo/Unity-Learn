@@ -3,6 +3,5 @@
     // 羚羊
     public class Wildebeest : Herbivore
     {
-        
     }
 }

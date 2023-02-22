@@ -3,6 +3,7 @@ using System.Diagnostics;
 using System.IO;
 using System.Text;
 using UnityEngine;
+using Debug = UnityEngine.Debug;
 
 namespace Yang.DataPersistence.Binary
 {
@@ -44,7 +45,7 @@ namespace Yang.DataPersistence.Binary
         }
 
         /// <summary>
-        /// 将自定义类按照自定义保存规则，以二进制文件形式保存在本地
+        ///     将自定义类按照自定义保存规则，以二进制文件形式保存在本地
         /// </summary>
         /// <param name="filePath">要保存到的位置（例如：folderPath\fileName.yang）</param>
         public void Save(string filePath)
@@ -78,7 +79,7 @@ namespace Yang.DataPersistence.Binary
         }
 
         /// <summary>
-        /// 加载自定义二进制文件，根据自定义规则解析成自定义类
+        ///     加载自定义二进制文件，根据自定义规则解析成自定义类
         /// </summary>
         /// <param name="filePath">文件路径，包含自定义后缀名（例如：folderPath\fileName.yang"）</param>
         /// <returns>自定义类对象</returns>
@@ -86,7 +87,7 @@ namespace Yang.DataPersistence.Binary
         {
             if (!File.Exists(filePath))
             {
-                UnityEngine.Debug.Log("文件不存在");
+                Debug.Log("文件不存在");
                 return null;
             }
 

@@ -9,10 +9,7 @@ namespace Yang.DesignPattern.Prototype.Example1
             CloneFactory factory = new CloneFactory();
             Sheep sally = new Sheep();
 
-            if (factory.GetClone(sally) is Sheep clonedSheep)
-            {
-                Debug.Log(clonedSheep.ToStringEX());
-            }
+            if (factory.GetClone(sally) is Sheep clonedSheep) Debug.Log(clonedSheep.ToStringEX());
         }
     }
 }

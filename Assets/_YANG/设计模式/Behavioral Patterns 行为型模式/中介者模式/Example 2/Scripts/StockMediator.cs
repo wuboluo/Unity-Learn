@@ -5,9 +5,9 @@ namespace Yang.DesignPattern.Interpreter.Example2
 {
     public class StockMediator : IMediator
     {
+        private readonly List<StockOffer> _buyOffers;
         private readonly List<Colleague> _colleagues;
         private readonly List<StockOffer> _sellOffers;
-        private readonly List<StockOffer> _buyOffers;
 
         private int _colleagueCodes;
         private bool _stockSold, _stockBought;
@@ -83,15 +83,9 @@ namespace Yang.DesignPattern.Interpreter.Example2
             Debug.Log("");
             Debug.Log("今日各股票股份变化情况：");
 
-            foreach (StockOffer offer in _sellOffers)
-            {
-                Debug.Log($"第 {offer.ColleagueCode} 位经纪人共出售 {offer.StockShares}份 {offer.Stock}股票");
-            }
+            foreach (StockOffer offer in _sellOffers) Debug.Log($"第 {offer.ColleagueCode} 位经纪人共出售 {offer.StockShares}份 {offer.Stock}股票");
 
-            foreach (StockOffer offer in _buyOffers)
-            {
-                Debug.Log($"第 {offer.ColleagueCode} 位经纪人共买入 {offer.StockShares}份 {offer.Stock}股票");
-            }
+            foreach (StockOffer offer in _buyOffers) Debug.Log($"第 {offer.ColleagueCode} 位经纪人共买入 {offer.StockShares}份 {offer.Stock}股票");
         }
     }
 }

@@ -3,6 +3,5 @@
     // 食草动物
     public class Herbivore
     {
-        
     }
 }

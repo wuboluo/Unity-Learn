@@ -2,7 +2,7 @@
 {
     public class ConcreteIterator : Iterator
     {
-        private ConcreteAggregate _aggregate;
+        private readonly ConcreteAggregate _aggregate;
         private int _current;
         private object _ret;
 
@@ -10,7 +10,7 @@
         {
             _aggregate = aggregate;
         }
-        
+
         public override object First()
         {
             return _aggregate[0];
@@ -19,10 +19,7 @@
         public override object Next()
         {
             _ret = null;
-            if (_current < _aggregate.Count - 1)
-            {
-                _ret = _aggregate[++_current];
-            }
+            if (_current < _aggregate.Count - 1) _ret = _aggregate[++_current];
 
             return _ret;
         }

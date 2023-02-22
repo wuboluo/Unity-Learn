@@ -1,4 +1,5 @@
-﻿using Yang.Net.Serialize;
+﻿using System;
+using Yang.Net.Serialize;
 
 namespace Yang.Net.S
 {
@@ -6,17 +7,17 @@ namespace Yang.Net.S
     {
         public override int GetBytesNumber()
         {
-            throw new System.NotImplementedException();
+            throw new NotImplementedException();
         }
 
         public override byte[] Writing()
         {
-            throw new System.NotImplementedException();
+            throw new NotImplementedException();
         }
 
         public override int Reading(byte[] bytes, int beginIndex = 0)
         {
-            throw new System.NotImplementedException();
+            throw new NotImplementedException();
         }
 
         public virtual int GetID()

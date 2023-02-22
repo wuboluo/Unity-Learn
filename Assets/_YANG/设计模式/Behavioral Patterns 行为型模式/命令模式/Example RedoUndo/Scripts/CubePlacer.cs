@@ -4,7 +4,7 @@ using UnityEngine;
 namespace Yang.DesignPattern.Command.Example
 {
     // 命令的具体执行内容
-    
+
     public static class CubePlacer
     {
         private static List<Transform> _cubes;

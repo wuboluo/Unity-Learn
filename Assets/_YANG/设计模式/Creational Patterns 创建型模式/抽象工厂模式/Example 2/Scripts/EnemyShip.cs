@@ -4,12 +4,12 @@ namespace Yang.DesignPattern.AbstractFactory.Example2
 {
     public abstract class EnemyShip
     {
-        public string Name;
-        
-        // 武器
-        protected IEnemyShipWeapon Weapon;
         // 引擎
         protected IEnemyShipEngine Engine;
+        public string Name;
+
+        // 武器
+        protected IEnemyShipWeapon Weapon;
 
         // 制造飞船
         public abstract void MakeShip();

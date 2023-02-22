@@ -11,7 +11,7 @@ namespace Yang.DesignPattern.Strategy.Example1
 
             Debug.Log("Dog: " + dog.TryToFly());
             Debug.Log("Bird: " + bird.TryToFly());
-            
+
             dog.SetFlyingAbility(new Flyable());
             Debug.Log("Dog: " + dog.TryToFly());
             Debug.Log("Bird: " + bird.TryToFly());

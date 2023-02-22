@@ -6,7 +6,7 @@ namespace Yang.FileFolderOperation
     public class OperationFolder : MonoBehaviour
     {
         /// <summary>
-        /// 创建或删除文件夹
+        ///     创建或删除文件夹
         /// </summary>
         /// <param name="folderPath">文件夹路径</param>
         private void CreateOrDeleteFolder(string folderPath)
@@ -25,7 +25,7 @@ namespace Yang.FileFolderOperation
         }
 
         /// <summary>
-        /// 获取指定路径下的所有文件夹名
+        ///     获取指定路径下的所有文件夹名
         /// </summary>
         /// <param name="folderPath">指定路径</param>
         /// <returns>文件夹名列表</returns>
@@ -36,7 +36,7 @@ namespace Yang.FileFolderOperation
         }
 
         /// <summary>
-        /// 得到指定路径下所有文件名
+        ///     得到指定路径下所有文件名
         /// </summary>
         /// <param name="folderPath">指定路径</param>
         /// <returns>文件夹列表</returns>
@@ -47,7 +47,7 @@ namespace Yang.FileFolderOperation
         }
 
         /// <summary>
-        /// 移动文件夹
+        ///     移动文件夹
         /// </summary>
         /// <param name="sourcePath">被移动的文件夹路径</param>
         /// <param name="destPath">移动到的路径</param>
@@ -57,7 +57,7 @@ namespace Yang.FileFolderOperation
         }
 
         /// <summary>
-        /// 获取指定文件夹的父级文件夹信息
+        ///     获取指定文件夹的父级文件夹信息
         /// </summary>
         /// <param name="folderPath">指定文件夹路径</param>
         /// <returns>父级文件夹信息</returns>
@@ -69,6 +69,7 @@ namespace Yang.FileFolderOperation
                 print(parentInfo.FullName); // 完整路径
                 print(parentInfo.Name); // 文件名
             }
+
             return parentInfo;
         }
     }

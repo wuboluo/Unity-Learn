@@ -37,7 +37,7 @@ namespace Yang.Net.FTP
 
         private void GetFileSize()
         {
-            FtpManager.GetFileSize("Icon.jpg", (length) => { print($"文件大小为：{length}"); });
+            FtpManager.GetFileSize("Icon.jpg", length => { print($"文件大小为：{length}"); });
         }
 
         private void CreateDirectory()
@@ -55,10 +55,7 @@ namespace Yang.Net.FTP
                     return;
                 }
 
-                foreach (string fileName in list)
-                {
-                    print(fileName);
-                }
+                foreach (string fileName in list) print(fileName);
             });
         }
     }

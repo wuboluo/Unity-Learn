@@ -138,7 +138,7 @@ namespace Yang.Net.Tcp.Async
                 byte[] bytes = new byte[bytes1.Length + bytes2_1.Length];
                 bytes1.CopyTo(bytes, 0);
                 bytes2_1.CopyTo(bytes, bytes1.Length);
-                
+
                 NetAsyncManager.Instance.SendTest(bytes);
                 await Task.Delay(500);
                 NetAsyncManager.Instance.SendTest(bytes2_2);

@@ -12,7 +12,7 @@ namespace Yang.DesignPattern.Interpreter.Example1
         public Chatroom Chatroom { get; set; }
         public string Name { get; }
 
-        
+
         public void Send(string to, string message)
         {
             Chatroom.Send(Name, to, message);

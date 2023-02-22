@@ -2,12 +2,12 @@
 {
     public class RobotEngineer
     {
-        private IRobotBuilder RobotBuilder { get; set; }
-
         public RobotEngineer(IRobotBuilder builder)
         {
             RobotBuilder = builder;
         }
+
+        private IRobotBuilder RobotBuilder { get; }
 
         public Robot GetRobot()
         {
@@ -17,7 +17,8 @@
         public void MakeRobot()
         {
             RobotBuilder.BuildRobotHead();
-            RobotBuilder.BuildRobotTorso();;
+            RobotBuilder.BuildRobotTorso();
+            ;
             RobotBuilder.BuildRobotArms();
             RobotBuilder.BuildRobotLegs();
         }

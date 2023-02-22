@@ -65,7 +65,7 @@ namespace Yang.Net.Udp.Async
         {
             try
             {
-                (Socket socket, EndPoint remoteEndPoint) = ((Socket, EndPoint)) result.AsyncState;
+                (Socket socket, EndPoint remoteEndPoint) = ((Socket, EndPoint))result.AsyncState;
 
                 // 返回值：接收了多少字节
                 int number = socket.EndReceiveFrom(result, ref remoteEndPoint);
@@ -88,10 +88,7 @@ namespace Yang.Net.Udp.Async
             {
                 // 发送成功
             }
-            else
-            {
-                // 发送失败
-            }
+            // 发送失败
         }
 
         private void ReceiveFromAsync(object obj, SocketAsyncEventArgs args)
@@ -99,24 +96,21 @@ namespace Yang.Net.Udp.Async
             if (args.SocketError == SocketError.Success)
             {
                 // 接收成功
-                
+
                 // 接收到的字节数组内容：
                 // 1，args.Buffer
                 // 2，cacheBytes
-                
+
                 // 接收到的字节长度
                 int number = args.BytesTransferred;
-                
+
                 // 继续接收消息
                 Socket s = obj as Socket;
                 // 重新设置从第几个位置开始接收、接收多少
                 args.SetBuffer(0, cacheBytes.Length);
                 s?.ReceiveFromAsync(args);
             }
-            else
-            {
-                // 接收失败
-            }
+            // 接收失败
         }
     }
 }

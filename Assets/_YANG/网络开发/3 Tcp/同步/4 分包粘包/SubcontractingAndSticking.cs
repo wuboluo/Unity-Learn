@@ -26,7 +26,7 @@ namespace Yang.Net.Tcp.Sync
             #endregion
 
             #region 实践解决
-            
+
             // 为所有消息添加头部信息，用于存储其消息长度
             // 根据分包、粘包的表现情况，修改接收消息处的逻辑
 

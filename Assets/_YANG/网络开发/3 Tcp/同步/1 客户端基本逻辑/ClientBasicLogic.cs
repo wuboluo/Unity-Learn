@@ -58,7 +58,7 @@ namespace Yang.Net.Tcp.Sync
                     break;
             }
             // print($"收到服务端收来的消息：{Encoding.UTF8.GetString(receiveBytes, 0, receiveNumber)}");
-            
+
             // Send
             socketTcp.Send(Encoding.UTF8.GetBytes("你好，我是Yang的客户端"));
 

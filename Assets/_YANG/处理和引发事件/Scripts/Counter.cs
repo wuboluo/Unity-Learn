@@ -8,6 +8,7 @@ namespace Yang.Event
     {
         // 阈值
         private readonly int _threshold;
+
         // 当前的值
         private int _value;
 

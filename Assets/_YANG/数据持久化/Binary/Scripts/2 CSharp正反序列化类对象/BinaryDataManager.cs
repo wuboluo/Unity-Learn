@@ -34,10 +34,8 @@ namespace Yang.DataPersistence.Binary
         {
             // 判断文件是否存在
             if (!File.Exists(path))
-            {
                 // 不存在就返回这个泛型对象的默认值，class=null
                 return default;
-            }
 
             using FileStream fs = new FileStream(path, FileMode.Open, FileAccess.Read);
             // 文件流形式不需要传入一个 byte数组

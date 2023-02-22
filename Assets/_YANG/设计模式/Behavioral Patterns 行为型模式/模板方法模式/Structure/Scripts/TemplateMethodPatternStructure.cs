@@ -8,7 +8,7 @@ namespace Yang.DesignPattern.TemplateMethod.Structure
         {
             AbstractClass aA = new ConcreteClassA();
             aA.TemplateMethod();
-            
+
             AbstractClass aB = new ConcreteClassB();
             aB.TemplateMethod();
         }

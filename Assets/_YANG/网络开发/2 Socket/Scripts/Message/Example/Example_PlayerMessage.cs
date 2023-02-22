@@ -2,8 +2,8 @@
 {
     public class Example_PlayerMessage : MessageBase
     {
-        public int playerID;
         public Example_PlayerData playerData;
+        public int playerID;
 
         public override byte[] Writing()
         {

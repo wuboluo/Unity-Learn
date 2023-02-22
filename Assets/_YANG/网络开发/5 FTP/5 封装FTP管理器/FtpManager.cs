@@ -10,21 +10,12 @@ namespace Yang.Net.FTP
 {
     public static class FtpManager
     {
-        #region 总结
-
-        // FTP的作用：
-        // 1，上传和下载功能（游戏进度数据等）
-        // 2，原生的AB包上传和下载
-        // 3，上传下载一些语言内容
-        
-        #endregion
-        
         private const string ftpPath = "ftp://127.0.0.1/";
         private const string userName = "yang";
         private const string password = "1223122";
 
         /// <summary>
-        /// 上传文件到FTP服务器
+        ///     上传文件到FTP服务器
         /// </summary>
         /// <param name="fileName">FTP上的文件名</param>
         /// <param name="localPath">本地文件路径</param>
@@ -74,7 +65,7 @@ namespace Yang.Net.FTP
         }
 
         /// <summary>
-        /// 从FTP服务器下载文件
+        ///     从FTP服务器下载文件
         /// </summary>
         /// <param name="fileName">文件名</param>
         /// <param name="localPath">下载到的本地路径</param>
@@ -131,7 +122,7 @@ namespace Yang.Net.FTP
         }
 
         /// <summary>
-        /// 移除FTP上的指定文件
+        ///     移除FTP上的指定文件
         /// </summary>
         /// <param name="fileName">文件名</param>
         /// <param name="action">移除完成后执行的操作</param>
@@ -167,7 +158,7 @@ namespace Yang.Net.FTP
         }
 
         /// <summary>
-        /// 获取FTP上某个文件大小
+        ///     获取FTP上某个文件大小
         /// </summary>
         /// <param name="fileName">文件名</param>
         /// <param name="action">获取完成后执行的操作</param>
@@ -202,7 +193,7 @@ namespace Yang.Net.FTP
         }
 
         /// <summary>
-        /// 在FTP上创建文件夹
+        ///     在FTP上创建文件夹
         /// </summary>
         /// <param name="directoryName">文件夹名</param>
         /// <param name="action">创建完成后执行的操作</param>
@@ -236,7 +227,7 @@ namespace Yang.Net.FTP
         }
 
         /// <summary>
-        /// 获取所有文件名
+        ///     获取所有文件名
         /// </summary>
         /// <param name="directoryName">文件夹路径</param>
         /// <param name="action">返回给外部的文件名列表</param>
@@ -289,5 +280,14 @@ namespace Yang.Net.FTP
             request.KeepAlive = false; // 传输完成后关闭连接
             request.UseBinary = true; // 使用二进制
         }
+
+        #region 总结
+
+        // FTP的作用：
+        // 1，上传和下载功能（游戏进度数据等）
+        // 2，原生的AB包上传和下载
+        // 3，上传下载一些语言内容
+
+        #endregion
     }
 }

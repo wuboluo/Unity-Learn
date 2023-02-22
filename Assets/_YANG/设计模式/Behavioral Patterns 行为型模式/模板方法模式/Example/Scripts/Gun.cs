@@ -2,7 +2,6 @@
 
 namespace Yang.DesignPattern.TemplateMethod.Example
 {
-    
     // 一个操作中的算法的框架，并将一些步骤延迟到子类中
     public abstract class Gun
     {
@@ -14,22 +13,24 @@ namespace Yang.DesignPattern.TemplateMethod.Example
             if (NeedSight()) AddSight();
             if (NeedMagazine()) AddMagazine();
             if (NeedSilencer()) AddSilencer();
-            
+
             Debug.Log("");
         }
 
         protected abstract void AddSight();
         protected abstract void AddMagazine();
         protected abstract void AddSilencer();
-        
+
         protected virtual bool NeedSight()
         {
             return true;
         }
+
         protected virtual bool NeedMagazine()
         {
             return true;
         }
+
         protected virtual bool NeedSilencer()
         {
             return true;

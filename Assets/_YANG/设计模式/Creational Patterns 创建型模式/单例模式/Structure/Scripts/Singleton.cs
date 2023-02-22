@@ -4,11 +4,11 @@
     {
         private static Singleton _instance;
 
-        public string Info => "Singleton Class";
-
         private Singleton()
         {
         }
+
+        public string Info => "Singleton Class";
 
         public static Singleton Instance()
         {

@@ -5,7 +5,7 @@
     {
         // 生产冰箱
         Fridge GetFridge();
-        
+
         // 生产空调
         AirConditioner GetAriConditioner();
     }

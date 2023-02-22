@@ -9,10 +9,13 @@
 
         // 建造框架
         public abstract void BuildFrame();
+
         // 建造引擎
         public abstract void BuildEngine();
+
         // 建造轮子
         public abstract void BuildWheels();
+
         // 建造门
         public abstract void BuildDoors();
     }

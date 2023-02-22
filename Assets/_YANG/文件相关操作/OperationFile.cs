@@ -1,6 +1,5 @@
 using System;
 using System.IO;
-using System.Linq;
 using UnityEngine;
 
 namespace Yang.FileFolderOperation
@@ -8,7 +7,7 @@ namespace Yang.FileFolderOperation
     public class OperationFile : MonoBehaviour
     {
         /// <summary>
-        /// 创建或删除指定文件
+        ///     创建或删除指定文件
         /// </summary>
         private void CreateOrDeleteFile(string filePath)
         {
@@ -19,7 +18,7 @@ namespace Yang.FileFolderOperation
         }
 
         /// <summary>
-        /// 写入文件
+        ///     写入文件
         /// </summary>
         /// <param name="form">内容形式</param>
         /// <param name="filePath">文件路径</param>
@@ -46,7 +45,7 @@ namespace Yang.FileFolderOperation
         }
 
         /// <summary>
-        /// 以流的形式写入文件
+        ///     以流的形式写入文件
         /// </summary>
         /// <param name="filePath">文件路径</param>
         /// <param name="content">内容</param>
@@ -60,7 +59,7 @@ namespace Yang.FileFolderOperation
         }
 
         /// <summary>
-        /// 读取文件
+        ///     读取文件
         /// </summary>
         /// <param name="form">内容形式</param>
         /// <param name="filePath">文件路径</param>
@@ -88,7 +87,7 @@ namespace Yang.FileFolderOperation
         }
 
         /// <summary>
-        /// 复制文件到新的位置，允许覆盖同名文件
+        ///     复制文件到新的位置，允许覆盖同名文件
         /// </summary>
         /// <param name="sourceFileName">被复制的文件路径</param>
         /// <param name="destFileName">被复制到的路径</param>
@@ -99,7 +98,7 @@ namespace Yang.FileFolderOperation
         }
 
         /// <summary>
-        /// 替换文件：使用其他文件的内容替换指定文件的内容，这一过程将删除原始文件，并创建被替换文件的备份
+        ///     替换文件：使用其他文件的内容替换指定文件的内容，这一过程将删除原始文件，并创建被替换文件的备份
         /// </summary>
         /// <param name="sourceFileName">用来替换的路径</param>
         /// <param name="destinationFileName">被替换的路径</param>
@@ -110,7 +109,7 @@ namespace Yang.FileFolderOperation
         }
 
         /// <summary>
-        /// 内容形式
+        ///     内容形式
         /// </summary>
         private enum ContentForm
         {

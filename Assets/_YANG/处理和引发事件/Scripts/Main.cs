@@ -15,8 +15,8 @@ namespace Yang.Event
     /// EventReceiver 事件接收方
     public class Main : MonoBehaviour
     {
-        private Counter _counter;
         public Button addButton;
+        private Counter _counter;
 
         private void Start()
         {

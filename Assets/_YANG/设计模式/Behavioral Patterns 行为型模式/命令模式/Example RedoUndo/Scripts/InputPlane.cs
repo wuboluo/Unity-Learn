@@ -7,8 +7,8 @@ namespace Yang.DesignPattern.Command.Example
         public Transform cubePrefab;
 
         private RaycastHit _hitInfo;
-        private Camera _mainCam;
         private CommandInvoker _invoker;
+        private Camera _mainCam;
 
         private void Awake()
         {

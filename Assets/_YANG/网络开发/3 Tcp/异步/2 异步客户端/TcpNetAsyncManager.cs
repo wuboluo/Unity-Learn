@@ -9,24 +9,25 @@ namespace Yang.Net.Tcp.Async
 {
     public class NetAsyncManager : MonoBehaviour
     {
+        private const int sendHeartbeatMsgDir = 2;
+
         // 接收消息的 缓存容器
         private readonly byte[] cacheBytes = new byte[1024 * 1024];
+
+        // 心跳消息，发送心跳消息间隔时间
+        private readonly HeartbeatMessage heartbeatMsg = new();
+
+        // 收到的消息队列
+        private readonly Queue<MessageBase> receiveQueue = new();
 
         // 容器中解析到的 光标 位置
         private int cacheNumber;
 
-        // 心跳消息，发送心跳消息间隔时间
-        private readonly HeartbeatMessage heartbeatMsg = new();
-        private const int sendHeartbeatMsgDir = 2;
-
-        // 客户端socket
-        private Socket socket;
-
         // 是否和服务器处于连接状态
         private bool isConnected;
 
-        // 收到的消息队列
-        private readonly Queue<MessageBase> receiveQueue = new();
+        // 客户端socket
+        private Socket socket;
         public static NetAsyncManager Instance { get; private set; }
 
 
@@ -198,10 +199,7 @@ namespace Yang.Net.Tcp.Async
                     }
 
                     // 如果这条消息成功解析，放入 已收到的消息队列，等待 update去逐条输出
-                    if (msg != null)
-                    {
-                        receiveQueue.Enqueue(msg);
-                    }
+                    if (msg != null) receiveQueue.Enqueue(msg);
 
                     // 更新容器中解析到的位置
                     currentIndex += msgLength;

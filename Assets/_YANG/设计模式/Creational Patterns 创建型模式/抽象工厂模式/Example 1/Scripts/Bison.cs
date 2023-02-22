@@ -3,6 +3,5 @@
     // 野牛
     public class Bison : Herbivore
     {
-        
     }
 }

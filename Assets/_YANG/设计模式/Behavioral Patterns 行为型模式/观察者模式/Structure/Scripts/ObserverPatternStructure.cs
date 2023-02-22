@@ -18,7 +18,7 @@ namespace Yang.DesignPattern.Observer.Structure
             s.SubjectState = "ABC";
             // 通知所有观察者
             s.Notify();
-            
+
             s.SubjectState = "666";
             s.Notify();
         }

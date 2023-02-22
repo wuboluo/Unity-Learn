@@ -23,13 +23,13 @@ namespace Yang.DesignPattern.Interpreter.Example2
 
         // 需求
         private string ConversionQues { get; }
-        
+
         // 被转换的单位
         public string FromConversion { get; }
-        
+
         // 转换成的单位
         public string ToConversion { get; }
-        
+
         // 被转换的数量
         public double Quantity { get; }
 

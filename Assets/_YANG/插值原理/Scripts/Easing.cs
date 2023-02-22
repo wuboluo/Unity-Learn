@@ -100,12 +100,12 @@ namespace Yang.LerpPrinciple
             {
                 return (t /= d) * t * t;
             }
-            
+
             public static float EaseOut(float t, float d)
             {
                 return (t = t / d - 1) * t * t + 1;
             }
-            
+
             public static float EaseInOut(float t, float d)
             {
                 if ((t /= d / 2) < 1) return 0.5f * t * t * t;
@@ -124,7 +124,7 @@ namespace Yang.LerpPrinciple
                 float s = p / 4;
                 return -(1 * Mathf.Pow(2, 10 * (t -= 1)) * Mathf.Sin((t * d - s) * (2 * Mathf.PI) / p));
             }
-            
+
             public static float EaseOut(float t, float d)
             {
                 if (Mathf.Approximately(t, 0)) return 0;
@@ -144,10 +144,10 @@ namespace Yang.LerpPrinciple
                 float s = p / 4;
 
                 if (t < 1) return -.5f * (Mathf.Pow(2, 10 * (t -= 1)) * Mathf.Sin((t * d - s) * (2 * Mathf.PI) / p));
-                
+
                 return Mathf.Pow(2f, -10f * (t -= 1f)) * Mathf.Sin((t * d - s) * (2 * Mathf.PI) / p) * 0.5f + 1f;
             }
-            
+
             public static float Punch(float t, float d)
             {
                 if (Mathf.Approximately(t, 0)) return 0;
@@ -213,7 +213,7 @@ namespace Yang.LerpPrinciple
             {
                 return (t = t / d - 1) * t * t * t * t + 1;
             }
-            
+
             public static float EaseInOut(float t, float d)
             {
                 if ((t /= d / 2) < 1) return 0.5f * t * t * t * t * t;

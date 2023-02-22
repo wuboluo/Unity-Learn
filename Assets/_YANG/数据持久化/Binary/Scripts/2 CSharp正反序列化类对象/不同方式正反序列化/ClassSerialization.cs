@@ -6,8 +6,8 @@ namespace Yang.DataPersistence.Binary
 {
     public class ClassSerialization : MonoBehaviour
     {
-        public DeSerializeForm form;
         private const string FilePath = "";
+        public DeSerializeForm form;
 
         private void Start()
         {
@@ -26,7 +26,7 @@ namespace Yang.DataPersistence.Binary
         }
 
         /// <summary>
-        /// 使用【文件流】序列化数据。主要用于存储到文件中
+        ///     使用【文件流】序列化数据。主要用于存储到文件中
         /// </summary>
         /// <param name="p">被序列化的类对象</param>
         /// <param name="filePath">二进制文件保存路径</param>
@@ -44,7 +44,7 @@ namespace Yang.DataPersistence.Binary
         }
 
         /// <summary>
-        /// 使用【内存流】序列化数据。用于得到字节数组，可用于网络传输
+        ///     使用【内存流】序列化数据。用于得到字节数组，可用于网络传输
         /// </summary>
         /// <param name="p">被序列化的类对象</param>
         /// <param name="filePath">二进制文件保存路径</param>

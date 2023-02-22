@@ -30,7 +30,7 @@ namespace Yang.DesignPattern.Interpreter.Example2
                 if (type != null)
                 {
                     object instance = Activator.CreateInstance(type);
-                 
+
                     // 根据转换成的单位名称来选择对应的函数
                     MethodInfo method = type.GetMethod(toConversion);
                     if (method != null)

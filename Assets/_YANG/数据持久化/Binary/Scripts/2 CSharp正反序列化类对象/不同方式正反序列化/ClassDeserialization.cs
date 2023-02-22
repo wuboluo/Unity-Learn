@@ -7,8 +7,8 @@ namespace Yang.DataPersistence.Binary
     // 通过断点快速查看反序列化结果
     public class ClassDeserialization : MonoBehaviour
     {
-        public DeSerializeForm form;
         private const string FilePath = "";
+        public DeSerializeForm form;
 
         private void Start()
         {
@@ -17,7 +17,7 @@ namespace Yang.DataPersistence.Binary
                 case DeSerializeForm.ByFileStream:
                     DeserializeFileByFile(FilePath);
                     break;
-                
+
                 case DeSerializeForm.ByMemoryStream:
                     DeserializeFileByMemory(FilePath);
                     break;
@@ -25,7 +25,7 @@ namespace Yang.DataPersistence.Binary
         }
 
         /// <summary>
-        /// 使用【文件流】反序列化数据
+        ///     使用【文件流】反序列化数据
         /// </summary>
         /// <param name="path">数据文件路径</param>
         /// <returns>自定义类对象</returns>
@@ -40,7 +40,7 @@ namespace Yang.DataPersistence.Binary
         }
 
         /// <summary>
-        /// 使用【内存流】反序列化数据
+        ///     使用【内存流】反序列化数据
         /// </summary>
         /// <param name="path">数据文件路径</param>
         /// <returns>自定义类对象</returns>

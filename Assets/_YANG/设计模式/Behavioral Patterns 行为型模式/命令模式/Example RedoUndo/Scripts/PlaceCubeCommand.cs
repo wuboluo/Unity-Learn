@@ -5,8 +5,8 @@ namespace Yang.DesignPattern.Command.Example
     public class PlaceCubeCommand : ICommand
     {
         private readonly Transform _cube;
-        private readonly Vector3 _position;
         private readonly int _id;
+        private readonly Vector3 _position;
 
         public PlaceCubeCommand(Transform cube, Vector3 position, int id)
         {

@@ -6,13 +6,12 @@ namespace Yang.DataPersistence.Binary
 {
     public class DataEncryption : MonoBehaviour
     {
-        [Header("加/解密")] public bool isEncryption;
-
         // 密钥
         private const byte Key = 101;
 
         // 二进制文件存储路径
         private const string SavePath = "";
+        [Header("加/解密")] public bool isEncryption;
 
         private Person _person;
 
@@ -23,7 +22,7 @@ namespace Yang.DataPersistence.Binary
         }
 
         /// <summary>
-        /// 异或加密
+        ///     异或加密
         /// </summary>
         private void XorEncryption(string path)
         {
@@ -41,7 +40,7 @@ namespace Yang.DataPersistence.Binary
         }
 
         /// <summary>
-        /// 异或解密
+        ///     异或解密
         /// </summary>
         private void XorDecryption(string path)
         {

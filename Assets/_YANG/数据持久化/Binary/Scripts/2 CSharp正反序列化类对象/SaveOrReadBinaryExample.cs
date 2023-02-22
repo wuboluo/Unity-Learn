@@ -15,7 +15,10 @@ namespace Yang.DataPersistence.Binary
                 str = "hhh"
             };
 
-            if (saveOrReadClassObject) BinaryDataManager.Save(tc, "TC");
+            if (saveOrReadClassObject)
+            {
+                BinaryDataManager.Save(tc, "TC");
+            }
             else
             {
                 TestClass result = BinaryDataManager.Read<TestClass>("TC");

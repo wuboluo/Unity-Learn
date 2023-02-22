@@ -8,7 +8,7 @@ namespace Yang.DesignPattern.Interpreter.Example2
     //  = 8 pints
     //  = 16 cups
     //  = 256 tablespoons
-    
+
     public class VolumeUnit : Expression
     {
         public override string Gallons(double quantity)

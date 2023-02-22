@@ -20,7 +20,7 @@ namespace Yang.DesignPattern.Interpreter.Example2
 
             broker2.SaleOffer(Stock.Google, 80);
             broker2.BuyOffer(Stock.Microsoft, 110);
-            
+
             nyse.PrintStockOfferings();
         }
     }

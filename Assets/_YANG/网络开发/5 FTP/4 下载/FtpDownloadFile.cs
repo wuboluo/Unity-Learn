@@ -71,7 +71,7 @@ namespace Yang.Net.FTP
                     }
 
                     fs.Close();
-                    
+
                     print("下载完成");
                 }
             }

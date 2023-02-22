@@ -24,7 +24,7 @@ namespace Yang.Net.FTP
             {
                 // 1，创建一个Ftp连接（想要上传一个文件，取名叫 pic.png）
                 if (WebRequest.Create(new Uri("ftp://127.0.0.1/pic.png")) is not FtpWebRequest request) return;
-                
+
                 // 2，将代理相关信息置空，避免服务器同时有 http相关服务，造成冲突
                 request.Proxy = null;
 

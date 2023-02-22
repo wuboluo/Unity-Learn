@@ -65,7 +65,7 @@ namespace Yang.Net.HTTP
                 response.Close();
                 // 2，GetResponseStream 返回从FTP服务器下载数据的流（这个流可以理解是正儿八经下载下来的数据）
                 Stream s = response.GetResponseStream();
-                
+
                 // 重要成员：
                 // 1，接收到的数据的长度
                 print(response.ContentLength);
