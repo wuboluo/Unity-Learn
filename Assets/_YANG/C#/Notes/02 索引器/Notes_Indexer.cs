@@ -10,8 +10,9 @@ namespace Yang.CSharp.Notes.Indexer
             Debug.Log("索引器");
 
             // 索引器使用
-            Person p = new Person { [0] = new() };
-            Debug.Log(p[0]);
+            Person p = new Person { [0] = new("YANG", 18) };
+            Debug.Log(p[0].Name);
+            Debug.Log(p["age"]);
 
             // [^index] 默认代表数组从后数，第几位，index>=1
 
@@ -32,6 +33,19 @@ namespace Yang.CSharp.Notes.Indexer
         private readonly int age;
         private readonly string name;
         private Person[] friends;
+
+        public string Name => name;
+
+        public Person()
+        {
+            
+        }
+
+        public Person(string name, int age)
+        {
+            this.name = name;
+            this.age = age;
+        }
 
         // 索引器可以重载
         public string this[string str]
