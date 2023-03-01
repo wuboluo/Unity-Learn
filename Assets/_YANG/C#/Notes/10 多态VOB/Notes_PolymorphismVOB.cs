@@ -25,9 +25,9 @@ namespace Yang.CSharp.Notes
 
     internal class GameObject
     {
-        public string name;
+        private string name;
 
-        public GameObject(string name)
+        protected GameObject(string name)
         {
             this.name = name;
         }
@@ -72,7 +72,7 @@ namespace Yang.CSharp.Notes
         {
             Father f = new Son();
             f.SpeakName();
-            (f as Son).SpeakName();
+            ((Son)f).SpeakName();
 
 
             GameObject p = new Player("XY");

@@ -22,7 +22,7 @@ namespace Yang.CSharp.Notes
             linkedList.AddFirst(20);
             // 3，在某一个节点之后添加一个节点
             // 要指定节点，需要先得到一个节点
-            var n = linkedList.Find(10);
+            LinkedListNode<int> n = linkedList.Find(10);
             linkedList.AddAfter(n, 15);
             // 3，在某一个节点之前添加一个节点
             linkedList.AddBefore(n, 5);
@@ -42,14 +42,14 @@ namespace Yang.CSharp.Notes
 
             // 查
             // 1，头节点
-            var first = linkedList.First;
+            LinkedListNode<int> first = linkedList.First;
             // 2，尾节点
-            var last = linkedList.Last;
+            LinkedListNode<int> last = linkedList.Last;
             // 3，找到指定值的节点
             // 无法直接通过下标获取中间元素，只有遍历找指定位置元素
-            var node = linkedList.Find(10);
+            LinkedListNode<int> node = linkedList.Find(10);
             // 4，判断是否存在
-            var con = linkedList.Contains(10);
+            bool con = linkedList.Contains(10);
 
 
             // 改
@@ -59,10 +59,10 @@ namespace Yang.CSharp.Notes
 
             // -------------------------------------------------- 遍历
             // 1，foreach
-            foreach (var item in linkedList) Debug.Log(item);
+            foreach (int item in linkedList) Debug.Log(item);
 
             // 2，从头到尾
-            var nowNode = linkedList.First;
+            LinkedListNode<int> nowNode = linkedList.First;
             while (nowNode.Next != null)
             {
                 Debug.Log(nowNode.Value);
