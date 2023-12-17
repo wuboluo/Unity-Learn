@@ -5,7 +5,7 @@ print("---------- 全局变量和本地变量 ----------")
 a = 1
 b = "123"
 
-for i=1,2 do
+for _ =1,2 do
 	c = "C"
 end
 print(c)
@@ -13,7 +13,7 @@ print(c)
 print()
 
 -- 本地变量
-for i=1,2 do
+for _ =1,2 do
 	local d = "D"
 end
 print(d)
