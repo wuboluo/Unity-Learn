@@ -17,7 +17,7 @@ print(nowTime["year"])
 print(nowTime["day"])
 
 for k,v in pairs(nowTime) do
-	--print(k,v)
+	print(k,v)
 end
 
 
