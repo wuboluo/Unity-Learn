@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 992dd6fbed83a8c479511053360814f9, type: 3}
+  m_Name: terst4
+  m_EditorClassIdentifier: 
+  firtsNode: {fileID: 11400000, guid: 2efec8b55f10c474591ab212f8e74b86, type: 2}
+  nodeActual: {fileID: 0}
+  state: 
+  limitDay: 0
+  startDay: 0
+  misionName: terst4
+  isMain: 0
+  nodeLinkData:
+  - baseNodeGUID: 51c4186b-f14f-47cb-9b23-e3ad29a71a25
+    portName: Next
+    targetNodeGUID: 83bdc548-958a-4c5d-8a3a-f2908ec9b66c
+  - baseNodeGUID: 83bdc548-958a-4c5d-8a3a-f2908ec9b66c
+    portName: NextNode 0
+    targetNodeGUID: ea4a66f9-3c8f-43fb-b543-caaa28cc24be
+  - baseNodeGUID: ea4a66f9-3c8f-43fb-b543-caaa28cc24be
+    portName: NextNode 0
+    targetNodeGUID: 0e234dbe-be50-4b91-ba4e-f94e05c44145

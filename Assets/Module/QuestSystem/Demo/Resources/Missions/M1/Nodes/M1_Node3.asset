@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d043e38139fc86409d4439ee183e20e, type: 3}
+  m_Name: M1_Node3
+  m_EditorClassIdentifier: 
+  nextNode: []
+  extraText: {fileID: 0}
+  objectsActivated:
+  - {fileID: 0}
+  - {fileID: 0}
+  isFinal: 1
+  nodeObjectives:
+  - keyName: kill
+    isCompleted: 0
+    maxItems: 1
+    actualItems: 0
+    description: 'Betray your best friend: Triangle'
+    hiddenObjective: 0
+    autoExitOnCompleted: 1
+  - keyName: noKill
+    isCompleted: 0
+    maxItems: 1
+    actualItems: 0
+    description: 'Betray the sexy devil that is evil triangle  '
+    hiddenObjective: 0
+    autoExitOnCompleted: 1
+  GUID: c587ebf7-7578-4a22-a332-3c7d6e4bc571
+  position: {x: 1256, y: 540}

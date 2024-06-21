@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 992dd6fbed83a8c479511053360814f9, type: 3}
+  m_Name: M6
+  m_EditorClassIdentifier: 
+  firtsNode: {fileID: 11400000, guid: fbcf008e6f6134a44941c0fed112c664, type: 2}
+  nodeActual: {fileID: 0}
+  state: 
+  limitDay: 536
+  startDay: 23
+  misionName: M6
+  isMain: 1
+  nodeLinkData:
+  - baseNodeGUID: 0d08a752-7d90-4066-a04d-8b41e770b79e
+    portName: NextNode 0
+    targetNodeGUID: 197cc94a-54a9-4f8e-9587-eaaea4bbabc9
+  - baseNodeGUID: 0d08a752-7d90-4066-a04d-8b41e770b79e
+    portName: NextNode 1
+    targetNodeGUID: 8aef2e6d-979e-4721-afa0-c12dbdb726b6
+  - baseNodeGUID: 4fc6c6c3-d0ca-4df3-8d4b-9a2cbf407d9d
+    portName: Next
+    targetNodeGUID: 0d08a752-7d90-4066-a04d-8b41e770b79e

@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 992dd6fbed83a8c479511053360814f9, type: 3}
+  m_Name: M1
+  m_EditorClassIdentifier: 
+  firtsNode: {fileID: 11400000, guid: fb8662ddaece52d4996d629ea9a4e5b8, type: 2}
+  nodeActual: {fileID: 11400000, guid: fb8662ddaece52d4996d629ea9a4e5b8, type: 2}
+  state: 
+  limitDay: 3
+  startDay: 1
+  misionName: M1
+  isMain: 1
+  nodeLinkData:
+  - baseNodeGUID: bf26dadf-2084-4f4d-b747-b40241a7e830
+    portName: Next
+    targetNodeGUID: 07ece3af-224e-441d-b153-f97fdf957708
+  - baseNodeGUID: 07ece3af-224e-441d-b153-f97fdf957708
+    portName: NextNode 0
+    targetNodeGUID: 1b2bc90b-9914-4465-b40c-cc7b4415eeee
+  - baseNodeGUID: 1b2bc90b-9914-4465-b40c-cc7b4415eeee
+    portName: NextNode 0
+    targetNodeGUID: 20c922bb-a810-4da4-a6d5-d2eda0753ecd
+  - baseNodeGUID: 1b2bc90b-9914-4465-b40c-cc7b4415eeee
+    portName: NextNode 1
+    targetNodeGUID: c587ebf7-7578-4a22-a332-3c7d6e4bc571
