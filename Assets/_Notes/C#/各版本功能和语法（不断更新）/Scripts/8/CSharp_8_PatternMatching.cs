@@ -2,7 +2,7 @@
 
 namespace Yang.CSharp.VariousVersionsGrammar
 {
-    public class CSharp_8_PatternMatchingPro : MonoBehaviour
+    public class CSharp_8_PatternMatching : MonoBehaviour
     {
         private void Start()
         {
